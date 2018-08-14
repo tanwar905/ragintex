@@ -1,0 +1,35 @@
+body{margin: 0px;padding: 0px;font-family: helvetica;}
+
+
+.login_sec, .verify_sec, .about_sec{display: inline-block;width: 100%;float: left;text-align: center;}
+
+.loginbutton{
+	margin: 0;text-align: center;width:100%;display: inline-block;
+}
+
+
+
+
+
+
+
+.address{
+	background-color: #6890ff;
+	color:white;
+	margin-left: -15px;
+	margin-right: -14px;
+          width:1350px;
+}
+
+.address1{
+	margin-top:-15px;
+	
+}
+
+.address2{
+	background-color: #6890ff;
+color: white;
+margin-left: -16px;
+margin-right: 0px;
+}
+

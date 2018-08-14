@@ -1,0 +1,229 @@
+
+<section class="third">
+<div style="background-color: #000000b5;padding-bottom: 44px;">
+<div class="container">
+    <div class="row">
+    <div class="col-sm-12 ">
+ <div class="row">
+        <div class="col-sm-6 bbb">
+             <div class="sec-1">
+        <h2 class="text-center">
+            PEER TO PEER<br>
+BITCOIN EXCHANGE
+            </h2>
+            <h4 class="text-center">FAST - SAFE - SIMPLE
+
+</h4>
+        </div>
+            <div class="col-sm-3 aaa">
+        
+                <strong class="text-success"> INR </strong>
+                
+                           <strong class="text-success"> MYR</strong>
+               
+                                   <strong class="text-success"> INR /MYR </strong>
+                
+                <br>
+                <a class="btn btn-success" href="buy.php?ccoin=BTC" style="
+    padding: 10px 26px 10px 26px;font-weight: bold;
+">Buy Now</a>  
+            </div>
+             
+              
+           <div class="col-sm-3 sellbtn">
+       
+              
+                <strong class="text-success">INR </strong>
+                
+                           <strong class="text-success">  MYR</strong>
+                
+                                   <strong class="text-success"> INR / MYR </strong>
+                
+                <br>
+                <a class="btn btn-danger" href="buy.php?ccoin=BTC" style="
+    padding: 10px 26px 10px 26px;font-weight: bold;
+">Sell Now</a>
+            </div>
+            </div>
+            <div class="col-sm-6">
+<iframe width="100%" height="300" src="https://www.youtube.com/embed/66_Oy6Jeh5s" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen style="
+    margin-bottom: -49px;" class="video"></iframe>
+            </div>
+            
+     
+        
+            </div>
+        </div>
+        <!-- <diiv class="col-md-6">
+        <img src="assest/images/12.jpg" width="615" height="340" style="
+    margin-top: -24px;
+">
+        </diiv>-->
+    </div>
+    </div>
+    </div>
+</section>  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="container">
+
+<div class="alert alert-info hide"><div class="user-referral-program referral-landing">
+    <div class="text-center prelude"><span><span><!-- react-text: 56 -->Instantly earn <!-- /react-text --><b>4,500.00 INR</b><!-- react-text: 58 --> for every one of your friends who joins Remitano.<!-- /react-text --></span></span><span>Share this link:</span></div><div class="text-center"><a class="btn btn-primary btn-sm" href="/in/login">Login to get referral link</a></div></div><p class="text-center"><a href="/in/referral_program">Find out more</a></p></div>
+    </div>
+<section>
+    <div class="container">
+        <div class="row" style="
+    margin-top: 25px;
+">
+            <div class="col-sm-6">
+<h3>LIST OF SELLERS</h3>
+       <!-- <div class="cntr">
+  <input class="hidden-xs-up" id="cbx11" name="fld[]" type="checkbox" value="1" style="
+    display:  none;
+">
+                        <label class="cbx" for="cbx11"></label>
+                        <label class="lbl" for="cbx11">&nbsp;&nbsp;Show offline sellers</label>
+                        <div class="clearfix"></div>
+</div>-->
+   
+        
+    <div class="main">
+    <ul>
+        <?php
+                while($fetch_data=mysqli_fetch_array($data1))
+                {
+                    
+        ?>
+        <li class="offer"><div class="offer-wrapper sell-offer null offer-345601"><div class="row"><div class="col-xs-12 col-sm-9 text-left"><a class="offer-body-meta" href="#"><div class="offer-body"><strong class="offer-price text-success"><span><?php echo $fetch_data['amount']; ?></span><!-- react-text: 688 -->/<!-- /react-text --><span class="text-btc-color">BTC</span></strong><span> via </span><span><span><?php echo $fetch_data['bankname']; ?></span><span><!-- react-text: 694 --> <!-- /react-text --><!-- react-text: 695 -->IMPS/RTGS/NEFT Bank Transfer<!-- /react-text --></span></span></div><div class="offer-meta"> <!-- react-text: 698 --><!-- /react-text --><!-- react-text: 699 --> <!-- /react-text --> <!-- react-text: 702 --> <!-- /react-text --></strong></div></a><div class="offer-meta"><div class="offer-author"><a href="/in/profile/ashuvicky"><strong class="offer-item-username"><span class="text-gray icon-globe-new"></span><span><?php echo $fetch_data['holdername']; ?></span></strong></a><!-- react-text: 710 --> <!-- /react-text --><em class="speed-badge badge badge-success">quick seller</em></div></div></div><div class="col-sm-3 text-right hidden-xs"><a class="btn btn-default" href="btcbby.php?aa=<?php echo $fetch_data['code'];  ?>">Buy</a></div></div></div></li>
+        <?php
+                }
+        ?>
+        <div class="hide"><ul class="pagination-sm pagination"><li class="pagination-prev disabled"><a tabindex="0">Previous</a></li><li class="hidden"><a tabindex="0" aria-label="Page 1 is your current page" aria-current="page">1</a></li><li class="pagination-next"><a tabindex="0">Next</a></li></ul></div>
+        <hr>
+        </ul>
+    </div>
+              </div>
+              <div class="col-sm-6">
+        <h3>LIST OF BUYERS</h3>
+       <!--<div class="cntr">
+  <input class="hidden-xs-up" id="cbx111" name="fld[]" type="checkbox" value="1" style="
+    display:  none;
+">
+                        <label class="cbx" for="cbx111"></label>
+                        <label class="lbl" for="cbx111">&nbsp;&nbsp;Show offline sellers</label>
+                        <div class="clearfix"></div>
+</div>-->
+   
+    <div class="main">
+    <ul>
+        <?php 
+                while($fetch_data1=mysqli_fetch_array($data))
+                { 
+                    
+        ?>
+        <li class="offer"><div class="offer-wrapper sell-offer null offer-345601"><div class="row"><div class="col-xs-12 col-sm-9 text-left">
+            <a class="offer-body-meta" href="#"><div class="offer-body"><strong class="offer-price text-success"><span><?php echo $fetch_data1['amount']; ?> </span><!-- react-text: 688 -->/<!-- /react-text -->
+            <span class="text-btc-color">BTC</span></strong><span> via </span><span><span><?php echo $fetch_data1['bankname']; ?></span><span><!-- react-text: 694 --> <!-- /react-text --><!-- react-text: 695 -->IMPS/RTGS/NEFT Bank Transfer<!-- /react-text --></span></span></div>
+            <div class="offer-meta"><!-- react-text: 698 --><!-- /react-text --><!-- react-text: 699 --> <!-- /react-text --><strong> <!-- react-text: 702 --> <!-- /react-text --></strong></div></a>
+            <div class="offer-meta"><div class="offer-author"><a href="/in/profile/ashuvicky"><strong class="offer-item-username"><span class="text-gray icon-globe-new"></span><span><?php echo $fetch_data1['holdername']; ?></span></strong></a>
+            <!-- react-text: 710 --> <!-- /react-text --><em class="speed-badge badge badge-success">quick buyer</em></div></div></div><div class="col-sm-3 text-right hidden-xs"><a class="btn btn-default" href="btcsell.php?bb=<?php echo $fetch_data1['code']; ?>">Sell</a></div></div></div></li>
+         <?php
+                } 
+         ?>
+           <!--<div class=""><ul class="pagination-sm pagination"><li class="pagination-prev disabled"><a tabindex="0">Previous</a></li><li class="hidden"><a tabindex="0" aria-label="Page 1 is your current page" aria-current="page">1</a></li><li class="pagination-next"><a tabindex="0">Next</a></li></ul></div>-->
+        <hr>
+        </ul>
+    </div>
+        <!--<span>Want better price?</span>
+        <a class="btn btn-primary btn-create-offer" href="/in/offers/create?type=sell">Create advertisement</a>-->
+           </div>
+          </div>
+        </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+<section class="">
+    <div class="container">
+<div class="title-section text-center"><hr class="hr-over"><span class="title-text">User Comments:</span></div>
+<!--<div class="row"><div class="press-item text-center col-xs-4" data-animation="fadeInDown" data-animation-delay="0">
+    
+    <img alt="coindesk" class="img-responsive" title="coindesk" src="assest/images/coindesk.png">
+    
+    </div><div class="press-item text-center col-xs-4" data-animation="fadeInDown" data-animation-delay="0"><img alt="cointelegraph" class="img-responsive" title="cointelegraph" src="assest/images/cointelegraph.png"></div><div class="press-item text-center col-xs-4" data-animation="fadeInDown" data-animation-delay="0"><img alt="yahoo-finance" class="img-responsive" title="yahoo-finance" src="assest/images/yahoo-finance.png"></div></div>-->
+</div>
+    </section>
+<section class="" style="margin-bottom: 120px;">
+
+     </section>
+    
+
+
+
+<section class="section-icons wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;margin-top: 35px;margin-bottom: 25px;">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-3" style="margin-bottom:5px;">
+					<div class="icon-wrap" style="background: #f05d5de6;">
+						<img src="images/user.png" class="img-responsive margin-auto" alt="Total User" title="Travel user" width="120">
+						<h2 class="icon-count c-section4"> 700</h2>
+						<h4 class="icon-title"> Total User </h4>
+					</div>
+				</div>
+				<div class="col-sm-3" style="margin-bottom:5px;">
+					<div class="icon-wrap" style="background: #5cb85c;">
+						<img src="images/bag.png" class="img-responsive margin-auto" alt="Total User" title="Buy/Sell BTC" width="120">
+						<h2 class="icon-count c-section4"> 450</h2>
+						<h4 class="icon-title">Sell Adevertisement</h4>
+					</div>
+				</div>
+				<div class="col-sm-3" style="margin-bottom:5px;">
+					<div class="icon-wrap" style="background: #e3e65a;">
+						<img src="images/globe.png" class="img-responsive margin-auto" alt="Total User" title="Buy/Sell ETH" width="120">
+						<h2 class="icon-count c-section4"> 400</h2>
+						<h4 class="icon-title">Buy Advertisement</h4>
+					</div>
+				</div>
+				<div class="col-sm-3" style="margin-bottom:5px;">
+					<div class="icon-wrap" style="background: #55b7d8;">
+						<img src="images/globe.png" class="img-responsive margin-auto" alt="Total User" title="Successful Trade" width="120">
+						<h2 class="icon-count c-section4"> 300</h2>
+						<h4 class="icon-title">Total Trades</h4>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	
+
+
+
+
+
+
+
+
