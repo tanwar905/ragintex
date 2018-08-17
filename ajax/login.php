@@ -1,8 +1,8 @@
 <?php
 include('config.php');
 
- $email = $_POST['email'];
- $pass = $_POST['pass'];
+ $email = $_REQUEST['email'];
+  $pass = $_REQUEST['pass'];
 
 
     //echo "select * from `register` where email='$email' AND password='$pass'"; die;
@@ -35,9 +35,9 @@ include('config.php');
         $_SESSION['eth_add']=$regfetch['ethaddress'];
         
         $_SESSION['vvi']=$email;
-        
+      
         if($status== 0){
-           // echo "select * from kyc_verification where user_email =".$email; die;
+      
             $regg = mysqli_query($con,"select * from kyc_verification where user_email ='$email'");
             $reggfetch=mysqli_fetch_array($regg);
             $dtfet=$reggfetch['status'];
@@ -91,12 +91,10 @@ include('config.php');
     }
     else{
         
-         //echo "<script>alert('Email And Password Not Match')</script>";
+
            echo "Email And Password Not Match";
            exit();
-    //header("location:ind_3.php");
-    
-    //echo '<script>window.location.href="ind_3.php"</script>';
+   
 
     
     }

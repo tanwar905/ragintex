@@ -228,16 +228,16 @@ GUEST
                             
                             <div class="col-md-3">
                                 <h4>Name</h4>
-                                <input type="text" class="form-control" name="name"  required value="" >
+                                <input type="text" class="form-control" name="name"  id="name" required value="" >
                             </div>
                             <div class="col-md-3">
                                 <h4>Email</h4>
-                                <input type="text" class="form-control" name="email"  required value="" readonly>
+                                <input type="text" class="form-control" name="email" id="email"  required value="" readonly>
                                 
                             </div>
                             <div class="col-md-3">
                                 <h4>Number</h4>
-                                <input type="text" class="form-control" name="number"  required value="" >
+                                <input type="text" class="form-control" name="number" id="number" required value="" >
                                 
                             </div>
                              <div class="col-md-1">
@@ -251,22 +251,15 @@ GUEST
                             </div>
                             <div class="col-md-3">
                                 <h4>KYC Status</h4>
-                            <?php    
-                                if($data_val['kyc_status']=='0' ){
-                                    $kyc='pending';
-                                }
-                                else{
-                                     $kyc='success';
-                                }
-                                ?>
-                              <input type="text" class="form-control"  required value="" readonly>  
+                            
+                              <input type="text" class="form-control" id="kyc"  required value="" readonly>  
                              
                             </div>
                        
                              <div class="col-md-3">
                                 <h4>Country</h4>
                                 <select  class="form-control" name="country">
-                                   
+                                    <option id="country1"></option>
                                     <option value='INR'>INDIA</option>
                                     <option value='MYR'>MALASIYA</option>
                                 </select>
@@ -379,10 +372,12 @@ GUEST
 				    <div class="col-sm-3">
 				        </div>
 				    <div class="col-sm-6 col-md-12 col-lg-6">
-				    <center><div class="foterr">
+				    <center><div class="foterr" style="
+    margin-top: -10px;
+">
 				    <ul>
 			
-					<li><a href="index.html" >	 <img class="images" src="img/home.png" style="    margin-top: 4px;"></a></li>
+					<li><a href="index1.html" >	 <img class="images" src="img/home.png" style="    margin-top: 4px;"></a></li>
 			
 						  	
 				
@@ -393,7 +388,12 @@ GUEST
 							
 					<li><a href="win.html" ><img class="images" src="img/ethereum.png" style="margin-top: 4px;"><p>(0.00) </p></a></li>
 					
-					<li><a href="editprofile.html" ><img class="images" src="img/user.png" style="margin-top: 4px;"></a></li>
+					<li style="
+
+    box-shadow: 3px 2px 8px black;
+    padding: 18px 4px 14px 8px;
+
+"><a href="editprofile.html" ><img class="images" src="img/user.png" style="margin-top: 4px;"></a></li>
 		</ul>
 						
 						</div> </center>
@@ -408,6 +408,38 @@ GUEST
 
 
 <script>
+
+ $(document).ready(function(){
+            $.ajax({
+                url:"ajax/editprofile.php",
+                type:"POST",
+                data:{},
+                success:function(data){
+                 
+                   var name=data.split(",")[0];
+             
+                    var email=data.split(",")[1];
+                    
+                     var number=data.split(",")[2];
+                     
+                     var kyc= data.split(",")[3];
+                     
+                     var country= data.split(",")[4];
+                   
+                    
+                    $("#name").val(name);
+                    $("#email").val(email);
+                    $("#number").val(number);
+                    $("#kyc").val(kyc);
+                    $("#country1").append(country);
+                   
+                }
+            });
+        });
+            
+
+
+
 function openNav() {
     document.getElementById("mySidenav").style.width = "250px";
     document.getElementById("main").style.marginLeft = "250px";

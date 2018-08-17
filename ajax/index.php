@@ -99,18 +99,16 @@ $fetchshow=mysqli_fetch_array($show);
 ?>
 
 <section class="third">
-<div style="background-color: #000000b5;padding-bottom: 44px;">
+<div style="background-color: #000000;padding-bottom: 19px;">
 <div class="container">
     <div class="row">
     <div class="col-md-12 ">
  
-        <div class="col-md-6" style="
-    margin-top: 41px;
-">
+        <div class="col-md-6" style="margin-top: 50px;">
              <div class="sec-1"style="
     padding-top: 0px !important;
     margin-top: -33px !important;
-    margin-bottom: 56px !important;
+    margin-bottom: 40px !important;
     text-align:  center;
     padding-right: 85px;
 ">
@@ -122,9 +120,8 @@ BITCOIN EXCHANGE
 
 </h4>
         </div>
-            <div class="col-md-3" style="
-    margin-left: 39px;
-">
+             </div>
+            <div class="col-md-3" style="width: 142px;">
         <?php if($state=='INR') { ?>
                 <strong class="text-success"><?php echo $finalbtcBuy;  ?> INR </strong>
                 <?php } 
@@ -135,15 +132,11 @@ BITCOIN EXCHANGE
                                    <strong class="text-success"><?php echo $finalbtcBuy;  ?> INR / <?php echo $finalMYRBuy;  ?> MYR </strong>
                 <?php } ?>
                 <br>
-                <a class="btn btn-success" href="buy.html?ccoin=BTC" style="
-    padding: 10px 26px 10px 26px;
-">Buy Now</a>  
+                <a class="btn btn-success" href="buy.html?ccoin=BTC" style="padding: 10px 26px 10px 26px;">Buy Now</a>  
             </div>
              
               
-           <div class="col-md-3 sellbtn" style="
-    margin-left: 101px;
-">
+           <div class="col-md-3 sellbtn" style="width: 142px;float: right;margin-top: -80px;"">
        
                <?php if($state=='INR') { ?>
                 <strong class="text-success"><?php echo $finalbtcSell;  ?> INR </strong>
@@ -155,22 +148,12 @@ BITCOIN EXCHANGE
                                    <strong class="text-success"><?php echo $finalbtcSell;  ?> INR / <?php echo $finalMYRSell;  ?> MYR </strong>
                 <?php } ?>
                 <br>
-                <a class="btn btn-danger" href="buy.html?ccoin=BTC" style="
-    padding: 10px 26px 10px 26px;
-">Sell Now</a>
+                <a class="btn btn-danger" href="buy.html?ccoin=BTC" style="padding: 10px 26px 10px 26px;">Sell Now</a>
             </div>
-            </div>
-           
             
-     
-        
-        
+
         </div>
-        <!-- <diiv class="col-md-6">
-        <img src="assest/images/12.jpg" width="615" height="340" style="
-    margin-top: -24px;
-">
-        </diiv>-->
+  
     </div>
     </div>
     </div>
