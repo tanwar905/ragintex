@@ -118,47 +118,41 @@ GUEST
 	
 </div>
 </div>
-<section class="page-heading" style=""><div class="container"><div class="row"><div class="col-md-12"><h1  class="ng-binding" style="text-align:center;">Bitcoin Wallet</h1></div></div></div></section>
 
+
+
+<section class="page-heading" style=""><div class="container"><div class="row"><div class="col-md-12"><h1  class="ng-binding" style="text-align: center;">LOGIN / REGISTER</h1></div></div></div></section>
 <div class="main ng-scope" role="main" ui-view="" style="">
-  <react-wallet-intro class="ng-scope">
-    <div data-reactroot="" class="container">
-      <div class="row">
-        <div class="col-md-3">
-          <figure class="alignnone"><img src="assest/images/shutterstock_456119011.jpg" alt="coin wallet"></figure>
-          <br>
-        </div>
-        <div class="col-md-6 fo-1">
-          <h2 style="border-left: 2px solid #000;
-padding: 8px 12px;
-background-color: #eee;"> Wallet</h2>
-          <div class="tale-responsive">
-           <table class="table table-bordered table-striped">
-                <thead>
-              <tr>
-                  <th style="text-align:center;">S.No.</th>
-                  <th style="text-align:center;">Address</th>
-                  <th style="text-align:center;">amount</th>
-              </tr>
-               </thead>
-                <tbody>
-              <tr>
-                  <td>1</td>
-                 
-              </tr>
-              <tr>
-                  <td>2</td>
-                 
-              </tr>
-               </tbody>
-          </table>
-         </div> 
-      </div>
-      <div class="col-md-3">
+  <react-login class="ng-scope">
+    <section data-reactroot="" class="page-content login-page">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-4 col-sm-push-4">
+            <form class="form login-form" method="post">
+              <div class="form-group form-grop__icon"><i class="fas fa-envelope"></i>
+                <div class="remi-colorized-field has-error">
+                  <input class="form-control" name="email" value="" placeholder="Enter your email" type="email">
+                  <div></div>
+                </div>
+              </div>
+               <div class="form-group form-grop__icon"><i class="fas fa-envelope"></i>
+                <div class="remi-colorized-field has-error">
+                  <input class="form-control" name="password" value="" placeholder="Enter your password" type="password">
+                  <div></div>
+                </div>
+              </div>
+              <div class="form-group">
+                <button class="btn btn-block btn-primary btn-continue" type="submit" name="submit"><span>Login</span></button>
+              </div>
+              <div class="form-group">
+               <a href="register.html"> <button class="btn btn-block btn-primary btn-continue" type="button" name="button"><span>Register</span></button></a>
+              </div>
+            </form>
           </div>
-      
-    </div>
-  </react-wallet-intro>
+        </div>
+      </div>
+    </section>
+  </react-login>
 </div>
 
 	<div class="foter">
@@ -210,6 +204,8 @@ function closeNav() {
 
 	</body>
 	</html>
+
+
 
 
 

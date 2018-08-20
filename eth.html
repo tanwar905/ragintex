@@ -48,7 +48,7 @@ GUEST
    <br>
   <a href="index.html"><img src="img/bitcoin(1).png" style="width: 19px;">&nbsp;&nbsp; BUY/SELL BTC</a>
   
-  <a href="index.html"><img src="img/ethereum(1).png" style="width: 19px;">&nbsp;&nbsp; BUY/SELL ETH</a>
+  <a href="eth.html"><img src="img/ethereum(1).png" style="width: 19px;">&nbsp;&nbsp; BUY/SELL ETH</a>
   
   
 
@@ -63,7 +63,6 @@ GUEST
 				<a href="dashboard.html" class="list-group-item"> Your Open Trade</a>
 				<a href="dashboard.html" class="list-group-item">Your Open Trade</a>
 				<a href="dashboard.html" class="list-group-item"> Your Cancelled Trade</a>
-				
 				<a href="dashboard.html" class="list-group-item">Your Advertisement</a>
 			</div>
 		</div>
@@ -118,50 +117,13 @@ GUEST
 	
 </div>
 </div>
-<section class="page-heading" style=""><div class="container"><div class="row"><div class="col-md-12"><h1  class="ng-binding" style="text-align:center;">Bitcoin Wallet</h1></div></div></div></section>
-
-<div class="main ng-scope" role="main" ui-view="" style="">
-  <react-wallet-intro class="ng-scope">
-    <div data-reactroot="" class="container">
-      <div class="row">
-        <div class="col-md-3">
-          <figure class="alignnone"><img src="assest/images/shutterstock_456119011.jpg" alt="coin wallet"></figure>
-          <br>
-        </div>
-        <div class="col-md-6 fo-1">
-          <h2 style="border-left: 2px solid #000;
-padding: 8px 12px;
-background-color: #eee;"> Wallet</h2>
-          <div class="tale-responsive">
-           <table class="table table-bordered table-striped">
-                <thead>
-              <tr>
-                  <th style="text-align:center;">S.No.</th>
-                  <th style="text-align:center;">Address</th>
-                  <th style="text-align:center;">amount</th>
-              </tr>
-               </thead>
-                <tbody>
-              <tr>
-                  <td>1</td>
-                 
-              </tr>
-              <tr>
-                  <td>2</td>
-                 
-              </tr>
-               </tbody>
-          </table>
-         </div> 
-      </div>
-      <div class="col-md-3">
-          </div>
-      
-    </div>
-  </react-wallet-intro>
+<div id="mmain">
+ <div class="js">
+    <div id="preloader"></div>
 </div>
-
-	<div class="foter">
+    
+</div>
+ <div class="foter">
 
 				<div class="row">
 				    <div class="col-sm-3">
@@ -196,6 +158,25 @@ background-color: #eee;"> Wallet</h2>
 
 
 <script>
+
+
+        $(document).ready(function(){
+            $.ajax({
+                url:"ajax/eth.php",
+                type:"POST",
+                data:{},
+                success:function(data){
+                   //alert(data);
+                       $('#mmain').html(data);
+                }
+            });
+        });
+            
+            
+            
+        
+       
+        
 function openNav() {
     document.getElementById("mySidenav").style.width = "250px";
     document.getElementById("main").style.marginLeft = "250px";
@@ -210,7 +191,6 @@ function closeNav() {
 
 	</body>
 	</html>
-
 
 
 
