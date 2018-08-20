@@ -68,7 +68,7 @@
 
 <br>
   <div class="about_sec">
-	<form method="post" id="login">
+	<form method="post" id="">
       <div class="registerform1" style="text-align: center;margin-top: 30px;">
 			<div class="form-group">
 
@@ -86,7 +86,7 @@
 
                      </div>
                      
-                <button type="submit" class="btn btn-outline-primary ">Login</button>
+                <button type="button" class="btn btn-outline-primary " id="login">Login</button>
 					 
 					 
 					 
@@ -115,7 +115,7 @@
 
 <script>
     $(document).ready(function(){
-        $('#login').submit(function(){
+        $('#login').click(function(){
             var email = $('#email').val();
             var pass = $('#pass').val();
             
