@@ -119,44 +119,41 @@
 	
 	<script>
 
-        $('#login').click(function(){
-            var email = $('#email').val();
-            var pass = $('#pass').val();
+ document.getElementById("login").onclick = function () {
+               location.href = "front.html"
             
-               window.location.href="front.html"
-            
-          /*$.ajax({
+        $.ajax({
                 url:"ajax/login.php",
                 type:"post",
                 data:{email,pass},
                 success:function(data){
-              
+                 alert(data);
                    if(data == 'success')
                    {
-                       window.location.href="front.html";
+                       location.href = "front.html"
                    }
                    if(data == 'Please verify your email')
                    {
-                       window.location.href="exchangelogin.html";
+                       location.href="exchangelogin.html";
                    }
                    if(data == 'upload kyc')
                    {
-                       window.location.href="kyc.html";
+                      location.href="kyc.html";
                    }
                    if(data == 'Your KYC status is pending try again..')
                    {
-                       window.location.href="exchangelogin.html";
+                      location.href="exchangelogin.html";
                    }
                    if(data == 'Your KYC verification rejected please do again..')
                    {
-                       window.location.href="kyc.html";
+                       location.href="kyc.html";
                    }
                    if(data == 'Email And Password Not Match'){
                       
-                       window.location.href="exchangelogin.html";
+                       location.href="exchangelogin.html";
                    }
                 }
-            })*/
+            })
             
             //return false;
             
