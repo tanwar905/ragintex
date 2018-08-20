@@ -6,7 +6,9 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Exchange index</title>
-       
+       <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
     
                   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -27,7 +29,28 @@
 
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	
-	
+	<script>
+	    
+	    
+        function call(){
+            
+            
+            $.ajax({
+                url:"http://webupdates.website/public_html/ragiantex/ajax/index.php",
+                type:"POST",
+                data:{},
+                success:function(data){
+                   alert(data);
+                   document.getElementById('mmain').innerHTML = data;
+                   
+                }
+            });
+        }
+            
+            
+ 
+	    
+	</script>
 	
 	</head>
 	<body onload="call()">
@@ -173,22 +196,7 @@ GUEST
 
 <script>
 
-
-        function call(){
-            $.ajax({
-                url:"http://webupdates.website/public_html/ragiantex/ajax/index.php",
-                type:"POST",
-                data:{},
-                success:function(data){
-                   //alert(data);
-                   document.getElementById('mmain').innerHTML = data;
-                   
-                }
-            });
-        }
-            
-            
-            
+           
         
        
         
