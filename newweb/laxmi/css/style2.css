@@ -1,0 +1,319 @@
+.information{
+	color: #fff;
+background-color:#958f8f ;
+border-color:#958f8f ;
+width: 100%;
+margin-top: 15px;
+}
+.formcontroling{
+	margin-left:33px;
+margin-top:-23px;
+width:60%;
+border:2px solid #40f925;
+}
+label{
+	margin-bottom: 0px;
+	margin-left: 5px;
+}
+.butn{
+	margin-left: 216px;
+margin-top: -86px;
+background-color:#40f925;
+}
+.mainimg{
+ height:419px; 
+ width:100%;
+ }
+ @media screen and (min-width:350px)and (max-width:750px)
+ {
+	.mainimg{
+ height:561px; 
+ width:100%;
+ } 
+ }
+ @media screen and (min-width:320px)and (max-width:550px)
+ {
+	.mainimg{
+ /* height:461px;  */
+ width:100%;
+ } 
+ }
+ .toping{
+	 margin-top:15px;
+	}
+ @media screen and (min-width:350px)and (max-width:750px)
+ {
+	  .toping{
+ margin-left: 32px;
+margin-top: 25px;
+	  }
+ }
+ @media screen and (min-width:320px)and (max-width:550px)
+ {
+	  .toping{
+ margin-left: 12px;
+margin-top: 25px;
+	  }
+ }
+ .verifybox{
+	   text-align:center; 
+   
+}
+ .form-group{
+	 margin-bottom: 15px;
+    margin-top: 45px;
+}
+.resend{
+ 	padding-left: 20px;
+	width: 165px; 
+	color:black;
+    background-color: lavender;
+}
+.confrm{
+padding-right: 121px;
+  padding-left: 34px; 
+  width:165px;
+  background-color:#3ad524; 
+  color:black;
+}
+
+@media screen and (min-width:410px) and (max-width:420px){
+		.resend{
+			    padding-left: 15px;
+				width: 208px;
+				color: black;
+				background-color: lavender;
+				}
+		.confrm{
+				padding-right: 121px;
+				padding-left: 76px;
+				width: 205px;
+				background-color:#3ad524; 
+				color:black;
+				}
+}
+
+@media screen and (min-width:363px) and (max-width:380px){
+		.resend{
+			    padding-left: 20px;
+				width: 192px;
+				color: black;
+			    background-color: lavender;
+				}
+		.confrm{
+				padding-right: 115px;
+				padding-left: 67px;
+				width: 165px;
+				background-color:#3ad524; 
+				color:black;
+				}
+}
+
+@media screen and (min-width:310px) and (max-width:326px){
+		.resend{
+			   padding-left: 20px;
+				width: 163px;
+				color: black;
+			    background-color: lavender;
+				}
+		.confrm{
+				padding-right: 110px;
+				padding-left: 46px;
+				width: 157px;
+				background-color:#3ad524; 
+				color:black;
+				}
+} 
+
+@media screen and (min-width:380px) and (max-width:390px){
+		.resend{
+			  padding-left: 25px;
+				width: 197px;
+				color: black;
+			    background-color: lavender;
+				}
+		.confrm{
+				padding-right: 121px;
+				padding-left: 65px;
+				width: 188px;
+				background-color:#3ad524; 
+				color:black;
+				}
+}
+
+@media screen and (min-width:360px) and (max-width:362px){
+		.resend{
+			  padding-left: 20px;
+				width: 182px;
+				color: black;
+			    background-color: lavender;
+				}
+		.confrm{
+				padding-right: 112px;
+				padding-left: 65px;
+				width: 165px;
+				background-color:#3ad524;
+				color:black; 
+				}
+} 
+
+/* profile page */
+
+
+.codeboxprofile{
+	border-width: 0px 0px 2px 0px;
+	border-bottom-color: black;
+    width: 100%;
+    /* margin-left: 78px; */
+	text-align:left;
+	margin: 0 auto;
+}
+
+.update{
+	background-color:#3ad524;
+	color:black;
+}
+
+
+
+ .codebox{
+	border-width: 0px 0px 2px 0px;
+	border-bottom-color: black;
+    width: 150px;
+    /* margin-left: 78px; */
+	text-align:center;
+	margin: 0 auto;
+}
+ 
+ .footer {
+	  width:100% !important;
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   
+  }
+.confm{
+   background-color:#40f925;
+  
+	}
+hr{
+	margin-bottom:10px;
+	border-top: 4px solid #e7dbdbcc
+}
+.verifyhead{
+    text-align:center;
+    margin-top: -20px;
+}
+
+.glyphicon{
+    top:16px;
+    font-size:20px;
+}    
+
+.codbox{
+    border-width: 0px 0px 2px 0px;
+border-bottom-color: black;
+width: 111px;
+}
+.frm{
+	
+    float: right;
+    margin-top: -69px;
+	}
+.wig{
+	 border-width: 0px 0px 2px 0px;
+border-bottom-color: black;
+width: 111px;
+}
+.full_box{
+	border-width: 0px 0px 2px 0px;
+border-bottom-color: black;
+}
+
+.list{
+	background-color: #e7dbdbcc;
+text-align: center;
+}
+.bdy{
+	padding: 10px;
+text-align: center;
+background-color: #40f925;
+}
+.def{
+	margin-bottom:0px;
+	margin-left: -25px;
+margin-right: -20px;
+}
+.deff{
+	text-align: center;
+}
+.clr{
+	padding: 10px;
+text-align: center;
+background-color: #6890ef;
+}
+
+.milky{
+	margin-top: 10px;
+text-align: center;
+background-color: #e7dbdbcc;
+}
+
+.circle{
+	width: 57px;
+border-radius: 40px;
+margin-top: 10px;
+}
+.image_milk{
+width: 40px;
+height: 31px;
+margin-left: -7px;
+margin-top: -6px;
+}
+
+
+.amul_img{
+	margin-left:70px;
+	margin-top:-65px;
+}
+
+
+.image_mother{
+width: 46px;
+height: 26px;
+margin-left: -7px;
+
+}
+.image_maha{
+width: 46px;
+height: 26px;
+margin-left: -11px;
+
+}
+.image_gokul{
+	    width: 47px;
+    height: 26px;
+    margin-left: -10px;
+}
+.image_tetra{
+	width: 44px;
+height: 35px;
+margin-left: -10px;
+margin-top: -6px;
+}
+.image_paneer{
+	width: 57px;
+height: 25px;
+margin-left: -16px;}
+.image_coco{
+	width: 44px;
+height: 25px;
+margin-left: -8px;}
+
+
+
+.buttn{
+	width: 100%;
+margin-top: 14px;
+background-color:#958f8f;
+}

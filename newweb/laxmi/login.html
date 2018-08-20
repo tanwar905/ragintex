@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>login</title>
+       
+    
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<link href="css/bootstarp.min.css" rel="stylesheet" id="bootstrap-css">
+		<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<link href="css/style.css" rel="stylesheet" type="text/css" />
+                <link href="css/style1.css" rel="stylesheet" type="text/css" />
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+	
+	</head>
+	<body>
+
+
+	<div class="login_sec">
+	<img src="img/logo.png" class="logoo">
+	<h5 class="heading">Pick the taste of purity that suits your budget</h5>
+	
+	
+	<div class="registerform1" >
+			
+						
+								<div class="form-group">
+									 <div class="inner-addon left-addon">
+						<i class="glyphicon glyphicon-envelope"></i>      
+						 <input type="text" id="email" name="email" class="form-control redi1" placeholder=" Email ID*" />
+	<input type="hidden" id="rrn">								</div>
+								 </div>
+						<div class="form-group">
+							 <div class="inner-addon left-addon">
+							 <i class="glyphicon glyphicon-pencil"></i>      
+					 <input type="password" id="password" name="password" class="form-control redi1" placeholder=" Password*"/>
+											</div>
+						</div>
+ 
+   
+               <button class="btn butn1" type="submit" name="submit" id="login">LOGIN</button>
+       </div>
+
+		</div>
+	
+
+<div class="botom-img">
+			   <img src="img/cow.png" class="footing_image">
+</div>		
+	
+	
+</body>
+</html>
+
+
+
+<script>
+
+$("#login").click(function(){  
+var email = $("#email").val(); 
+var password = $("#password").val(); 
+
+
+       $.ajax({ 
+			type:"POST",   
+			url: "http://codegente.com/aapp/loginjs.php?id="+email+"&pass="+password ,
+			data:"", 
+			success: function(data)
+			{ 
+                           var url=data;
+                          var aa=url.split(",")[0];
+                        var dataa=url.split(",")[1];
+                         var mobile=url.split(",")[2];    
+                          
+                                if(aa.includes("successfuly login"))
+                              {     alert(aa);
+   
+                             
+
+                                   window.location="searchproducts.html";
+                                  
+                           }
+
+                            else { 
+                                         alert('email and password not currect');   
+                                      }           
+
+            
+                             
+                                                             
+	
+				}
+			
+        
+});
+
+                    
+
+});
+
+</script>
+
