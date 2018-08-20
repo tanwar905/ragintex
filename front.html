@@ -181,7 +181,8 @@ GUEST
                 data:{},
                 success:function(data){
                    //alert(data);
-                       $('#mmain').html(data);
+                   document.getElementById('mmain').innerHTML = data;
+                   
                 }
             });
         }
