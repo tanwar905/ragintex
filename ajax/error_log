@@ -1051,3 +1051,6 @@ Stack trace:
 [20-Aug-2018 09:10:42 America/New_York] PHP Notice:  Undefined variable: ch in /home/webuwvgp/public_html/public_html/ragiantex/ajax/index.php on line 32
 [20-Aug-2018 09:10:42 America/New_York] PHP Warning:  curl_setopt() expects parameter 1 to be resource, null given in /home/webuwvgp/public_html/public_html/ragiantex/ajax/index.php on line 32
 [20-Aug-2018 09:10:42 America/New_York] PHP Warning:  curl_setopt(): supplied resource is not a valid cURL handle resource in /home/webuwvgp/public_html/public_html/ragiantex/ajax/index.php on line 58
+[20-Aug-2018 12:13:58 America/New_York] PHP Notice:  Undefined variable: ch in /home/webuwvgp/public_html/public_html/ragiantex/ajax/index.php on line 32
+[20-Aug-2018 12:13:58 America/New_York] PHP Warning:  curl_setopt() expects parameter 1 to be resource, null given in /home/webuwvgp/public_html/public_html/ragiantex/ajax/index.php on line 32
+[20-Aug-2018 12:13:59 America/New_York] PHP Warning:  curl_setopt(): supplied resource is not a valid cURL handle resource in /home/webuwvgp/public_html/public_html/ragiantex/ajax/index.php on line 58

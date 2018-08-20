@@ -20,71 +20,89 @@
 
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	
-	
 <style>
-
-      .one{
-  border: 0;
-  outline: 0;
-  background: transparent;
-  border-bottom: 1px solid black;
-     width: 100%;
-    margin-top: 10px;
-    margin-bottom: 19px;
-       font-size: 15px;
-     
+.button {
+  border-radius: 4px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 25px;
+ padding: 13px 22px;
+ 
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
 }
 
-.sa {
-                   text-align: left;
-    width: 100%;
-    font-size: 15px;
-         
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
 
-   }
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
 
+.button:hover span {
+  padding-right: 20px;
+}
 
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
 </style>
 
 	
 	</head>
-	<body>
+	<body style="background-color: #a929af;">
 
+<div class="head1" style="background: #fff;border-bottom: 2px solid #9d9595;">
 
-
-
-<br>
-<br>
-
-<div class="">
-
-
-						<p class="text-center" style="margin-top:120px;"><span style="color:green;font-size:35px;font-weight:bold;">RAGI</span><span style="color:red;font-size:35px;font-weight:bold;">ANTEX </span>
-						<br><small style="color:#a6a90e;">BUY/SELL BTC FAST AND SECURE </small></p>					
-						
-  	
+					
+						<p class="text-center"><span style="color:green;font-size:25px;font-weight:bold;">RAGI</span><span style="color:red;font-size:25px;font-weight:bold;">ANTEX </span>
+						</p>		
+   
+      	
 </div>
 
-  
+
+<br>
+<br>
+<div class="container" style="margin-top:130px;">
+<div class="row">
+<div class="col-sm-12">
+    <div class="row">
+        <div class="col-sm-3">
+            </div>
+            <div class="col-sm-6">
+    
+<a href="exchangelogin.html"><button class="button" style="background:green;"><span>Login </span></button></a>
+    
 	
-		
-		
-		<script>
-		$(document).ready(function(){
 		 
-		    setTimeout(function(){ window.location.href="login.html"; }, 3000);
-
-		});
 		
-	
-</script>
 
+		    	 
+<a href="register.html"><button class="button pull-right"><span>Signup </span></button></a>
 
+</div>
+<div class="col-sm-3">
+            </div>
 
+  </div>	</div>		
+</div>
 
-
-
-		
+</div>
+  
 
 	
 	</body></html>
