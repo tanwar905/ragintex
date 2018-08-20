@@ -119,13 +119,15 @@
             var email = $('#email').val();
             var pass = $('#pass').val();
             
-            $.ajax({
+               window.location.href="front.html"
+            
+          /*$.ajax({
                 url:"ajax/login.php",
                 type:"post",
                 data:{email,pass},
                 success:function(data){
-                 window.location.href="front.html"
-                  /* if(data == 'success')
+              
+                   if(data == 'success')
                    {
                        window.location.href="front.html";
                    }
@@ -148,11 +150,11 @@
                    if(data == 'Email And Password Not Match'){
                       
                        window.location.href="exchangelogin.html";
-                   }*/
+                   }
                 }
-            })
+            })*/
             
-            return false;
+            //return false;
             
         
         });
