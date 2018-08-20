@@ -106,11 +106,14 @@
 
 	
 	</body></html>
-
-<script type="text/javascript">
-    document.getElementById("myButton").onclick = function () {
-        location.href = "exchangelogin.html";
-    };
+	<script>
+$('#myButton').click(function(){
+            var email = $('#email').val();
+            var pass = $('#pass').val();
+            
+               window.location.href = "exchangelogin.html";
+        
+        });
 </script>
 
 
