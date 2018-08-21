@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Add New Product</title>
+       
+    
+        
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link href="css/bootstarp.min.css" rel="stylesheet" id="bootstrap-css">
+			<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<link href="css/style1.css" rel="stylesheet" type="text/css" />
+                <link href="css/sidemenu.css" rel="stylesheet" type="text/css" />
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+	<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+	
+	<style>
+
+      .one{
+  border: 0;
+  outline: 0;
+  background: transparent;
+  border-bottom: 1px solid black;
+     width: 100%;
+    margin-top: 10px;
+    margin-bottom: 19px;
+       font-size: 15px;
+     
+}
+
+.sa {
+                   text-align: left;
+    width: 80%;
+    font-size: 15px;
+         
+
+   }
+
+</style>
+	
+	</head>
+	<body>
+	
+
+	
+	
+<div class="head_nav heasder_top">
+
+						<a href="javascript: history.go(-1)" class=back_left><img src="img/left-arrow.png"></a>
+						<h3 class="verifyhead">ADD New Product</h3>	
+                   <h3 class="log_out">  <img src="img/logout.png" id="immgg">  
+        </h3>	
+</div>
+				
+				
+	
+	
+
+	
+   <div class="add_newproduct" >
+
+    <div class="product_img" id="imm">
+
+     		
+     	</div>	  
+	 	
+	 	<div class="input_quantity">
+	 	<div class="bufallo_perlt">
+	 		<h4 id="subcat"></h4>
+	 		<h5 id="rate"></h5>
+	 	</div>
+	 		<div class="hr_border"></div>
+	 			<div class="input-group input_grquantity">
+          <span class="input-group-btn">
+              <button type="button" class="btn btn-default btn-number" disabled="disabled" id="min" data-type="minus" data-field="quant[1]">
+                  <span class="glyphicon glyphicon-minus"></span>
+              </button>
+          </span>
+        <div class="input_center">
+          <span class="input_name">Quantity</span>
+          <input type="text" name="quant[1]" class="input-number" id="quu" value="1" min="1" max="100">
+          
+          <span class="Quantity_l">L</span>
+         
+		</div>
+          <span class="input-group-btn">
+              <button type="button" class="btn btn-default btn-number" data-type="plus" id="ppl" data-field="quant[1]">
+                  <span class="glyphicon glyphicon-plus"></span>
+              </button>
+          </span>
+      </div>
+	 		<div class="hr_border"></div>
+	 	</div>
+                       
+
+   		
+	</div>	
+	 	  
+	 	   
+	 	    
+<div class="btn_subsordelier">
+		
+				
+				<button class="deliver_btn" id="dilv">
+					Subscribe
+				</button>
+				
+				
+				<button class="subscrive_btn" >
+					Delever once 	 
+				</button>
+				
+				
+</div>
+<form id="frrm">
+<div class="subscrive_detail">
+<div class="hr_border"></div>
+	<div class="subscrive_detailin">
+			<div class="subscrive_detailleft">
+				<input type="date" name="date" class="one">
+                                <input type="hidden" name="dunt" id="qnn" value="1">
+			</div>
+			<div class="subscrive_detailright">
+				<a href="#"><span class="glyphicon glyphicon-calendar"></span></a>
+			</div>
+				
+	</div>
+	<div class="hr_border"></div>
+		
+
+</div>
+	
+<div >
+	<input type="submit" name="submit" class="footer_bt footer_subs" >
+</div>	 	  
+	  
+</form>
+		  
+</body>
+</html>
+
+<script>
+
+$(document).ready(function(){   
+
+$.ajax({
+    url: 'http://codegente.com/aapp/session.php',
+    type: 'POST',
+    success: function(result) {
+        if (result == 'success'){   
+
+url=document.URL;
+
+var pid=url.split("=")[1];
+
+    $.ajax({ 
+			type:"json",   
+			url: "http://codegente.com/aapp/addproductjs.php?pid="+pid,
+			data:"", 
+			success: function(data)
+			{        
+                                   var dd=data;
+                              $("#imm").append(dd);
+                                                    
+	
+				}
+			});
+
+     $.ajax({ 
+			type:"json",   
+			url: "http://codegente.com/aapp/subcatjs.php?pid="+pid,
+			data:"", 
+			success: function(data)
+			{        
+                                   var ddd=data;
+                            
+                           $("#subcat").append(ddd);
+                                                    
+	
+				}
+			});
+ $.ajax({ 
+			type:"json",   
+			url: "http://codegente.com/aapp/ratejs.php?pid="+pid,
+			data:"", 
+			success: function(data)
+			{        
+                                   var dddd=data;
+                               
+
+
+                           $("#rate").append(dddd);
+                                                    
+	
+				}
+			});
+    
+
+
+           $(function () {
+
+        $('form').on('submit', function (e) {
+
+        var oid = Math.floor((Math.random() * 100000));
+
+          e.preventDefault();
+
+          $.ajax({
+            type: 'get',
+            url: 'http://codegente.com/aapp/delivery_once.php?orderid='+oid,
+            data: $('form').serialize(),
+            success: function () {
+                         
+                  
+                 url=document.URL;
+
+                   var idd=url.split("=")[1];
+                  window.location.href="checkout.html?orderid="+oid;
+          
+
+                
+              
+            }
+          });
+
+        });
+
+      });
+
+
+           
+
+                 $("#ppl").click(function(){
+                           
+                          var aj=  $("#quu").val();
+                       
+                            $("#qnn").val(aj);     
+                 
+                            
+                                        
+                 });
+
+           $("#min").click(function(){
+                           
+                          var aj=  $("#quu").val();
+                    $("#qnn").val(aj);
+                        
+                 });
+
+
+             $("#dilv").click(function(){
+                           
+                            window.location.href="addnewproduct.html?id="+pid;
+                        
+                 });
+ 
+      $("#immgg").click(function(){ 
+                                   
+
+                          $.ajax({
+                                type: 'get',
+                                url: 'http://codegente.com/aapp/logout.php',
+                                data: '',
+                                success: function () {
+                                
+                                          
+                                     window.location.href="login.html";
+          
+
+                
+              
+                               }
+                           });
+                        
+                        
+                 });
+
+ 
+
+                 
+}else{
+           //  window.location="login.html";
+        }
+    }
+});
+
+
+});
+
+
+</script>
+<script>  
+  $(document).ready(function(){   
+
+	$('.btn-number').click(function(e){ 
+    e.preventDefault();
+    
+    fieldName = $(this).attr('data-field');
+    type      = $(this).attr('data-type');
+    var input = $("input[name='"+fieldName+"']");
+    var currentVal = parseInt(input.val());
+    if (!isNaN(currentVal)) {
+        if(type == 'minus') {
+            
+            if(currentVal > input.attr('min')) {
+                input.val(currentVal - 1).change();
+                 
+            } 
+            if(parseInt(input.val()) == input.attr('min')) {
+                $(this).attr('disabled', true);
+              
+            }
+
+        } else if(type == 'plus') {
+
+            if(currentVal < input.attr('max')) {
+                input.val(currentVal + 1).change();
+            }
+            if(parseInt(input.val()) == input.attr('max')) {
+                $(this).attr('disabled', true);
+            }
+
+        }
+    } else {
+        input.val(0);
+    }
+});
+$('.input-number').focusin(function(){
+   $(this).data('oldValue', $(this).val());
+});
+$('.input-number').change(function() {
+    
+    minValue =  parseInt($(this).attr('min'));
+    maxValue =  parseInt($(this).attr('max'));
+    valueCurrent = parseInt($(this).val());
+    
+    name = $(this).attr('name');
+    if(valueCurrent >= minValue) {
+        $(".btn-number[data-type='minus'][data-field='"+name+"']").removeAttr('disabled')
+    } else {
+        alert('Sorry, the minimum value was reached');
+        $(this).val($(this).data('oldValue'));
+    }
+    if(valueCurrent <= maxValue) {
+        $(".btn-number[data-type='plus'][data-field='"+name+"']").removeAttr('disabled')
+    } else {
+        alert('Sorry, the maximum value was reached');
+        $(this).val($(this).data('oldValue'));
+    }
+    
+    
+});
+$(".input-number").keydown(function (e) {
+        // Allow: backspace, delete, tab, escape, enter and .
+        if ($.inArray(e.keyCode, [46, 8, 9, 27, 13, 190]) !== -1 ||
+             // Allow: Ctrl+A
+            (e.keyCode == 65 && e.ctrlKey === true) || 
+             // Allow: home, end, left, right
+            (e.keyCode >= 35 && e.keyCode <= 39)) {
+                 // let it happen, don't do anything
+                 return;
+        }
+        // Ensure that it is a number and stop the keypress
+        if ((e.shiftKey || (e.keyCode < 48 || e.keyCode > 57)) && (e.keyCode < 96 || e.keyCode > 105)) {
+            e.preventDefault();
+        }
+    });
+
+});
+</script>
+	

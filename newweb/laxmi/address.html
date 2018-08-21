@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>verify</title>
+       
+    
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link href="css/bootstarp.min.css" rel="stylesheet" id="bootstrap-css">
+		<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<link href="css/style.css" rel="stylesheet" type="text/css" />
+                <link href="css/style1.css" rel="stylesheet" type="text/css" />
+
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+	
+<style>
+
+      .one{
+  border: 0;
+  outline: 0;
+  background: transparent;
+  border-bottom: 1px solid black;
+     width: 80%;
+    margin-top: 10px;
+    margin-bottom: 19px;
+       font-size: 15px;
+     
+}
+
+.sa {
+                   text-align: left;
+    width: 80%;
+    font-size: 15px;
+         
+
+   }
+
+
+</style>
+
+
+
+
+	
+	</head>
+	<body>
+
+
+<div class="head_nav heasder_top">
+
+						<a href="javascript: history.go(-1)" class=back_left><img src="img/left-arrow.png"></a>
+						<h3 class="verifyhead">Address</h3>	
+                   <h3 class="log_out"> <a href="http://codegente.com/aapp/logout.php" style="color:  #fff;"> <img src="img/logout.png">
+        </a></h3>	
+</div>
+
+  <div class="about_sec">
+	<img src="img/logo.png" class="logoo">
+	<h5 class="heading">Pick the taste of purity that suits your budget</h5>
+	
+	
+			
+      <div class="registerform1" style="text-align: center;margin-top: 30px;">
+          <div class="form-group">
+                 <label for="usr"  class="sa">City</label>
+                 <select class="one" id="cit">
+                       <option>select city</option>
+                   </select>
+                
+                     </div>
+                     
+          <div class="form-group">
+
+                     <label for="usr"  class="sa">Area</label>
+                
+                   <select class="one" id="are">
+                       
+                   </select>
+                 
+
+                     </div>
+                     
+			<div class="form-group">
+
+                     <label for="usr"  class="sa">Address</label>
+
+                   <input type="text" id="add1"  class="one" value="">
+
+                     </div>
+
+                  <!--<div class="form-group">
+
+                     <label for="usr"  class="sa">Address2</label>
+
+                   <input type="text" id="add2"  class="one" value="">
+
+                     </div>-->
+
+		<div class="form-group">
+
+                     <label for="usr"  class="sa">Pincode</label>
+
+                   <input type="text" id="pin"  class="one" value="">
+
+                     </div>
+                      <div class="form-group">
+                      <button type="submit" class="btn button2" id="oo">Update</button>
+		  </div>
+                       
+		</div>
+                  
+                  
+
+                  
+
+		
+                       
+		</div>
+		
+
+
+
+
+
+
+		
+
+	
+	</body></html>
+
+<script>
+
+$.ajax({
+    url: 'http://codegente.com/aapp/session.php',
+    type: 'POST',
+    success: function(result) {
+        if (result == 'success'){   
+
+
+
+                       $.ajax({ 
+			type:"POST",   
+			url: "http://codegente.com/aapp/fetchaddress.php" ,
+			data:"", 
+			success: function(data)
+			{     
+				   var add1=data.split(",")[0]; 
+                                 var add2=data.split(",")[1];      
+				    var pincode=data.split(",")[2];              
+
+				         document.getElementById('add1').value=add1;                 
+                                            document.getElementById('add2').value=add2;      
+                                       document.getElementById('pin').value=pincode;    
+	
+				}
+			});
+
+     
+
+
+      $("#oo").click(function(){   
+var add1= $("#add1").val(); 
+var city= $('#cit :selected').text();
+var pin= $("#pin").val(); 
+var area= $('#are :selected').text();  
+  
+
+       $.ajax({ 
+			type:"POST",   
+			url: "http://codegente.com/aapp/profileupdate.php?address="+add1+"&pincode="+pin+"&city="+city+"&area="+area ,
+			data:"", 
+			success: function(data)
+			{     
+				        
+				                  alert('Update Address Successfull');
+
+				                 window.history.back();                   
+                                                      
+	
+				}
+			});
+
+});
+
+        
+
+      
+      
+
+  }else{
+             // window.location="login.html";
+        }
+    }
+});
+ 
+ 
+ $(document).ready(function(){ 
+    $.ajax({ 
+			type:"POST",   
+			url: "http://codegente.com/aapp/city.php" ,
+			data:"", 
+			success: function(data)
+			{     
+				        
+				                  $("#cit").append(data);                   
+                                                      
+	
+				}
+			});
+			
+			
+			 
+			
+			
+});
+
+</script>
+
+
+<script>
+				$(document).ready(function(e) {
+					
+				
+               
+				$('#cit').change(function(){
+		    
+		   var aa = $('#cit :selected').text();
+		    
+		                  $.ajax({ 
+			type:"POST",   
+			url: "http://codegente.com/aapp/area.php?city="+aa ,
+			data:"", 
+			success: function(data)
+			{     
+				        
+				                  $("#are").append(data);                   
+                                                      
+	
+				}
+			});
+			
+				  
+		           }); 
+				});
+</script>

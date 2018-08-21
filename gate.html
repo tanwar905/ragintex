@@ -1,0 +1,32 @@
+<HTML>
+
+<iframe name="iframe" src=""></iframe>
+<script>
+var iframe = document.getElementsByTagName('iframe')[0];
+var url = iframe.src;
+alert(url);
+var getData = function (data) {
+    if (data && data.query && data.query.results && data.query.results.resources && data.query.results.resources.content && data.query.results.resources.status == 200) loadHTML(data.query.results.resources.content);
+    else if (data && data.error && data.error.description) loadHTML(data.error.description);
+    else loadHTML('Error: Cannot load ' + url);
+};
+var loadURL = function (src) {
+    url = src;
+    var script = document.createElement('script');
+    script.src = 'http://codegente.com/aapp/pay/index.php?orderid=47323';
+    document.body.appendChild(script);
+	
+};
+var loadHTML = function (html) {
+    iframe.src = 'about:blank';
+    iframe.contentWindow.document.open();
+	var a = iframe.contentWindow.document;
+	var res = a.replace("<html>", "");
+	alert(res);
+    iframe.contentWindow.document.write(res);
+	
+    iframe.contentWindow.document.close();
+} 
+loadURL(iframe.src);
+</script>
+</HTML>

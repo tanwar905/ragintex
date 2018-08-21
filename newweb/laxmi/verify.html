@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>verify</title>
+       
+    
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<link href="css/bootstarp.min.css" rel="stylesheet" id="bootstrap-css">
+		<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<link href="css/style.css" rel="stylesheet" type="text/css" />
+                <link href="css/style1.css" rel="stylesheet" type="text/css" />
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+	
+	
+	</head>
+	<body>
+
+
+	
+	  <div class="verify_sec">
+	<img src="img/logo.png" class="logoo">
+	<h5 class="heading">Pick the taste of purity that suits your budget</h5>
+	
+			<h2 class="enter_code">ENTER CODE</h2>
+			
+			<h4>We have send you and SMS on <br><span class="mobile_no">+91<h4 id="mon">9876543210</h4></span> with a 4-digit <br>Verification code(OTP)</h4>
+	
+	<div class="verification_form">
+			<div class="form-group">
+			  <input type="text" name="otp" class="form-control codebox" id="otpp" placeholder="" value="">
+			</div>
+
+		<!--<h5 class="verifybox"> DETECTING SMS VERIFICATION CODE </h5>-->
+                        <button type="submit" class="btn button2" id="oo">Submit</button>
+		</div>
+		
+</div>
+
+<div class="botom-img">
+			   <img src="img/cow.png" class="footing_image">
+</div>		
+
+	
+	</body>
+</html>
+
+<script>
+
+  
+    $(document).ready(function() {   
+
+      
+
+             $("#oo").click(function(){  
+             
+                  var otp= $("#otpp").val(); 
+                  
+
+       $.ajax({ 
+			type:"POST",   
+			url: "http://codegente.com/aapp/verifyjs.php?otp="+otp ,
+			data:"", 
+			success: function(data)
+			{ 
+                               
+                               if(data=='1'){   
+				
+				 window.location="login.html" ;
+				
+			                                              }
+                            else{  alert('otp not match');   }                                  
+	
+				}
+			});
+
+
+    });       
+      
+});
+ 
+ 
+
+
+</script>
+
+
+
