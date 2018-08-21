@@ -1,0 +1,263 @@
+<script>
+        
+'use strict';
+
+var switchButton 			= document.querySelector('.switch-button');
+var switchBtnRight 			= document.querySelector('.switch-button-case.right');
+var switchBtnLeft 			= document.querySelector('.switch-button-case.left');
+var activeSwitch 			= document.querySelector('.active');
+
+function switchLeft(){
+	switchBtnRight.classList.remove('active-case');
+	switchBtnLeft.classList.add('active-case');
+	activeSwitch.style.left 						= '0%';
+}
+
+function switchRight(){
+	switchBtnRight.classList.add('active-case');
+	switchBtnLeft.classList.remove('active-case');
+	activeSwitch.style.left 						= '50%';
+}
+
+switchBtnLeft.addEventListener('click', function(){
+	switchLeft();
+}, false);
+
+switchBtnRight.addEventListener('click', function(){
+	switchRight();
+}, false);
+
+
+</script>
+
+<!--<script>
+function check()
+		{
+			
+			if ($(".gal").hasClass("active-class"))
+			{
+				$(".gal").removeClass("active-class");
+				
+			}
+			else
+			{
+				$(".gal").addClass("active-class");
+			
+			}
+		}
+    function check1()
+		{
+			
+			if ($(".gal").hasClass("active-class1"))
+			{
+				$(".gal").removeClass("active-class1");
+				
+			}
+			else
+			{
+				$(".gal").addClass("active-class1");
+			
+			}
+		}
+</script>-->
+	
+	<script>
+        
+        var main1 = function() {
+  $('.bt-p1').click(function() {
+    $('.bt-photo').toggle(); 
+  }); 
+	$(document).click(function(e) {
+        var target = e.target;
+        if (!$(target).is('.bt-p1') && !$(target).parents().is('.bt-p1')) {
+          $('.bt-photo').hide() ;
+        }
+      });
+
+}; 
+$(document).ready(main1); 
+ 
+                var main1 = function() {
+  $('.bt-p2').click(function() {
+    $('.bt-video').toggle(); 
+  }); 
+	$(document).click(function(e) {
+        var target = e.target;
+        if (!$(target).is('.bt-p2') && !$(target).parents().is('.bt-p2')) {
+          $('.bt-video').hide() ;
+        }
+      });
+
+}; 
+$(document).ready(main1); 
+ 
+
+$(".slider").each(function() {
+  var $this = $(this);
+  var $group = $this.find(".slide_group");
+  var $slides = $this.find(".slide");
+  var bulletArray = [];
+  var currentIndex = 0;
+  var timeout;
+
+  function move(newIndex) {
+    var animateLeft, slideLeft;
+
+    advance();
+
+    if ($group.is(":animated") || currentIndex === newIndex) {
+      return;
+    }
+
+    bulletArray[currentIndex].removeClass("active");
+    bulletArray[newIndex].addClass("active");
+
+    if (newIndex > currentIndex) {
+      slideLeft = "100%";
+      animateLeft = "-100%";
+    } else {
+      slideLeft = "-100%";
+      animateLeft = "100%";
+    }
+
+    $slides.eq(newIndex).css({
+      display: "block",
+      left: slideLeft
+    });
+    $group.animate(
+      {
+        left: animateLeft
+      },
+      function() {
+        $slides.eq(currentIndex).css({
+          display: "none"
+        });
+        $slides.eq(newIndex).css({
+          left: 0
+        });
+        $group.css({
+          left: 0
+        });
+        currentIndex = newIndex;
+      }
+    );
+  }
+
+  function advance() {
+    clearTimeout(timeout);
+    timeout = setTimeout(function() {
+      if (currentIndex < $slides.length - 1) {
+        move(currentIndex + 1);
+      } else {
+        move(0);
+      }
+    }, 4000);
+  }
+
+  $(".next_btn").on("click", function() {
+    if (currentIndex < $slides.length - 1) {
+      move(currentIndex + 1);
+    } else {
+      move(0);
+    }
+  });
+
+  $(".previous_btn").on("click", function() {
+    if (currentIndex !== 0) {
+      move(currentIndex - 1);
+    } else {
+      move(3);
+    }
+  });
+
+  $.each($slides, function(index) {
+    var $button = $('<a class="slide_btn">&bull;</a>');
+
+    if (index === currentIndex) {
+      $button.addClass("active");
+    }
+    $button
+      .on("click", function() {
+        move(index);
+      })
+      .appendTo(".slide_buttons");
+    bulletArray.push($button);
+  });
+
+  advance();
+});
+
+</script>
+<script>
+$('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:0,
+    autoplay:true,
+    autoplayTimeout:3000,
+    autoplayHoverPause:true,
+    nav:true,
+	navText : ["<i class='fa fa-chevron-left'></i>","<i class='fa fa-chevron-right'></i>"],
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:1
+        },
+        1000:{
+            items:1
+        }
+    }
+})
+</script>
+    <script>
+
+</script>
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-120912780-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-120912780-1');
+</script>
+
+
+<!-- Facebook Chat Code -->
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js#xfbml=1&version=v2.12&autoLogAppEvents=1';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<!-- Your customer chat code -->
+<div class="fb-customerchat"
+  attribution="setup_tool"
+  page_id="101902366822275"
+  theme_color="#F97D09"
+  logged_in_greeting="Hi, how can i help you ?"
+  logged_out_greeting="Hi, how can i help you ?">
+</div>
+
+<!-- Facebook Chat Code -->
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+     <script type="text/javascript" src="assest/js/plugins.js"></script>
+    <script type="text/javascript" src="assest/js/main.js"></script>
+
+</body>
+</html>

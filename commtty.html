@@ -25,9 +25,78 @@
 
 
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	
-	
-	
+<style>
+    
+    
+.team-sec{float: left;width: 100%;}
+.team .photo {width: 224px; height: 250px; display: inline-block; overflow: hidden; position: relative; }
+.photo-shadow {position: absolute; z-index: -1; top: 12px; left: 16px; bottom: -10px; border: 1px solid #E3E3E3; height: 250px; width: 246px; background: #fff; }
+.col-item{position: relative;}
+.team{margin-top: 60px;}
+.team .photo img{width: 100%;    vertical-align: middle;position: relative;}
+.social-connect{margin-top: 13px;}
+.info{margin-top: 22px;}
+.info .name{font-size: 18px;font-weight: 600;margin-bottom: 2px;}
+.info .degination{font-size: 16px;font-weight: 300;font-style: italic;color: #8B8B8B;}
+.social-connect a{ display: inline-block; border: 1px solid #E3E3E3; font-size: 14px; color: #919191; width: 24px; height: 24px; text-align: center; line-height: 24px;margin-right: 4px;}
+.social-connect a .fa{margin: 0;}
+.social-connect a:hover{background-color: #4EBEE9;color: #fff;} .carousel-line{    border: 1px solid #ddd; height: 320px; position: absolute; bottom: -90px; width: 110%; left: -5.5%;}
+.carousel-line > .controls{position: absolute; bottom: -16px; left: 50%; margin-left: -50px; background: #fff; padding: 0px 20px; color: #000;}
+.carousel-line > .controls > a{    color: #868686; font-size: 24px; font-weight: 300;}
+
+
+@media only screen and (max-width: 480px) {
+    .team{
+        margin: 0 auto !important;
+        width: 90% !important;
+
+    }
+    
+}
+@media screen and (min-width:481px ) and (max-width:767px)
+{
+.team{
+        margin:110 auto !important;
+        width: 95% !important;
+        
+    }	
+}
+@media screen and (min-width:768px ) and (max-width:990px)
+{
+.team{
+        margin:110 auto !important;
+        width: 90% !important;
+        
+    }
+.carousel-line {left: -0.5%; }   
+}
+
+@media screen and (min-width:991px ) and (max-width:1024px)
+{
+.team{
+        margin:110 auto !important;
+        width: 92% !important;
+        
+    }
+.carousel-line {left: -2.5%; }   
+}
+
+
+@media screen and (min-width:1025px ) and (max-width:1326px)
+{
+.team{
+        margin:110 auto !important;
+        width: 93% !important;
+        
+    }
+.carousel-line {left: -3.5%; }   
+}
+
+
+
+    
+</style>
+
 	</head>
 	<body>
 	
@@ -102,6 +171,7 @@ GUEST
 </div>
 </div> 
   <a href="#"><img src="img/logout.png">&nbsp;&nbsp;LOGOUT</a>
+
 </div>
 
 <div id="main">
@@ -118,50 +188,48 @@ GUEST
 	
 </div>
 </div>
-<section class="page-heading" style=""><div class="container"><div class="row"><div class="col-md-12"><h1  class="ng-binding" style="text-align:center;">Bitcoin Wallet</h1></div></div></div></section>
 
-<div class="main ng-scope" role="main" ui-view="" style="">
-  <react-wallet-intro class="ng-scope">
-    <div data-reactroot="" class="container">
-      <div class="row">
-        <div class="col-md-3">
-          <figure class="alignnone"><img src="assest/images/shutterstock_456119011.jpg" alt="coin wallet"></figure>
-          <br>
-        </div>
-        <div class="col-md-6 fo-1">
-          <h2 style="border-left: 2px solid #000;
-padding: 8px 12px;
-background-color: #eee;"> Wallet</h2>
-          <div class="tale-responsive">
-           <table class="table table-bordered table-striped">
-                <thead>
-              <tr>
-                  <th style="text-align:center;">S.No.</th>
-                  <th style="text-align:center;">Address</th>
-                  <th style="text-align:center;">amount</th>
-              </tr>
-               </thead>
-                <tbody>
-              <tr>
-                  <td>1</td>
-                 
-              </tr>
-              <tr>
-                  <td>2</td>
-                 
-              </tr>
-               </tbody>
-          </table>
-         </div> 
-      </div>
-      <div class="col-md-3">
-          </div>
-      
-    </div>
-  </react-wallet-intro>
-</div>
-
-	<div class="foter">
+            <div class="container" style="margin-top: 181px;
+margin-bottom: 213px;">
+                <div class="row">
+                    <div id="carousel-example" class="carousel slide team team-web-view" data-ride="carousel">
+                        <div class="carousel-line">
+                            <div class="controls pull-right">
+                                <a class="left fa fa-angle-left btn" href="#carousel-example" data-slide="prev"></a><a class="right fa fa-angle-right btn " href="#carousel-example" data-slide="next"></a>
+                            </div>
+                        </div>
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner">
+                           
+                            
+                            <div class="item >
+                                <div class="row">
+                                    
+                                    <div class="col-sm-3">
+                                        <div class="col-item">
+                                           <!-- <div class="photo-shadow"></div>-->
+                                            <div class="photo">
+                                                <img src="assest/images/pp1.png" alt="User one">
+                                            </div>
+                                            <div class="info">
+                                                <div class="name"></div>
+                                                <div class="degination"></div>
+                                              
+                                                <div class="clearfix"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                  
+                                </div>
+                            </div>
+                         
+                          
+                     
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <div class="foter">
 
 				<div class="row">
 				    <div class="col-sm-3">
@@ -210,9 +278,3 @@ function closeNav() {
 
 	</body>
 	</html>
-
-
-
-
-
-

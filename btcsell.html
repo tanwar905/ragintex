@@ -25,9 +25,102 @@
 
 
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	
-	
-	
+
+<style>
+    
+    /***
+Bootstrap Line Tabs by @keenthemes
+A component of Metronic Theme - #1 Selling Bootstrap 3 Admin Theme in Themeforest: http://j.mp/metronictheme
+Licensed under MIT
+***/
+
+/* Tabs panel */
+.tabbable-panel {
+  border:1px solid #eee;
+  padding: 10px;
+}
+
+/* Default mode */
+.tabbable-line > .nav-tabs {
+  border: none;
+  margin: 0px;
+}
+.tabbable-line > .nav-tabs > li {
+  margin-right: 2px;
+}
+.tabbable-line > .nav-tabs > li > a {
+  border: 0;
+  margin-right: 0;
+  color: #737373;
+}
+.tabbable-line > .nav-tabs > li > a > i {
+  color: #a6a6a6;
+}
+.tabbable-line > .nav-tabs > li.open, .tabbable-line > .nav-tabs > li:hover {
+  border-bottom: 4px solid #fbcdcf;
+}
+.tabbable-line > .nav-tabs > li.open > a, .tabbable-line > .nav-tabs > li:hover > a {
+  border: 0;
+  background: none !important;
+  color: #333333;
+}
+.tabbable-line > .nav-tabs > li.open > a > i, .tabbable-line > .nav-tabs > li:hover > a > i {
+  color: #a6a6a6;
+}
+.tabbable-line > .nav-tabs > li.open .dropdown-menu, .tabbable-line > .nav-tabs > li:hover .dropdown-menu {
+  margin-top: 0px;
+}
+.tabbable-line > .nav-tabs > li.active {
+  border-bottom: 4px solid #f3565d;
+  position: relative;
+}
+.tabbable-line > .nav-tabs > li.active > a {
+  border: 0;
+  color: #333333;
+}
+.tabbable-line > .nav-tabs > li.active > a > i {
+  color: #404040;
+}
+.tabbable-line > .tab-content {
+  margin-top: -3px;
+  background-color: #fff;
+  border: 0;
+  border-top: 1px solid #eee;
+  padding: 15px 0;
+}
+.portlet .tabbable-line > .tab-content {
+  padding-bottom: 0;
+}
+
+/* Below tabs mode */
+
+.tabbable-line.tabs-below > .nav-tabs > li {
+  border-top: 4px solid transparent;
+}
+.tabbable-line.tabs-below > .nav-tabs > li > a {
+  margin-top: 0;
+}
+.tabbable-line.tabs-below > .nav-tabs > li:hover {
+  border-bottom: 0;
+  border-top: 4px solid #fbcdcf;
+}
+.tabbable-line.tabs-below > .nav-tabs > li.active {
+  margin-bottom: -2px;
+  border-bottom: 0;
+  border-top: 4px solid #f3565d;
+}
+.tabbable-line.tabs-below > .tab-content {
+  margin-top: -10px;
+  border-top: 0;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 15px;
+}
+
+
+
+</style>
+
+
 	</head>
 	<body>
 	
@@ -48,7 +141,7 @@ GUEST
    <br>
   <a href="index.html"><img src="img/bitcoin(1).png" style="width: 19px;">&nbsp;&nbsp; BUY/SELL BTC</a>
   
-  <a href="index.html"><img src="img/ethereum(1).png" style="width: 19px;">&nbsp;&nbsp; BUY/SELL ETH</a>
+  <a href="eth.html"><img src="img/ethereum(1).png" style="width: 19px;">&nbsp;&nbsp; BUY/SELL ETH</a>
   
   
 
@@ -118,50 +211,58 @@ GUEST
 	
 </div>
 </div>
-<section class="page-heading" style=""><div class="container"><div class="row"><div class="col-md-12"><h1  class="ng-binding" style="text-align:center;">Bitcoin Wallet</h1></div></div></div></section>
-
-<div class="main ng-scope" role="main" ui-view="" style="">
-  <react-wallet-intro class="ng-scope">
-    <div data-reactroot="" class="container">
-      <div class="row">
-        <div class="col-md-3">
-          <figure class="alignnone"><img src="assest/images/shutterstock_456119011.jpg" alt="coin wallet"></figure>
-          <br>
+<section class="page-heading" style=""><div class="container"><div class="row"><div class="col-md-12"><h1  class="ng-binding" style="text-align:center;">BUY / SELL </h1></div></div></div></section>
+    <div class="container">
+        <div class="row">
+    		<div class="col-md-12">
+    		    <div class="js" style="display:none;">
+                    <div id="preloader"></div>
+                </div>
+    			<h3 class="text-center" id="btcbbyy">Sell Market</h3>
+    	    </div>
         </div>
-        <div class="col-md-6 fo-1">
-          <h2 style="border-left: 2px solid #000;
-padding: 8px 12px;
-background-color: #eee;"> Wallet</h2>
-          <div class="tale-responsive">
-           <table class="table table-bordered table-striped">
-                <thead>
-              <tr>
-                  <th style="text-align:center;">S.No.</th>
-                  <th style="text-align:center;">Address</th>
-                  <th style="text-align:center;">amount</th>
-              </tr>
-               </thead>
-                <tbody>
-              <tr>
-                  <td>1</td>
-                 
-              </tr>
-              <tr>
-                  <td>2</td>
-                 
-              </tr>
-               </tbody>
-          </table>
-         </div> 
-      </div>
-      <div class="col-md-3">
-          </div>
-      
     </div>
-  </react-wallet-intro>
-</div>
+<br>
+<br>
 
-	<div class="foter">
+<br>
+<br>
+
+
+
+
+
+
+<!--<script>
+    
+    $( document ).ready(function() {
+    
+    $("#buyy").keyup(function(){
+        
+        var aas=$(this).val();
+        
+        if(aas==''){
+            
+            $("#addver").hidden();
+        }
+        else{
+            
+         $("#addver").show();
+        
+        }
+    });
+    
+    
+});
+    
+    
+</script>
+-->
+
+
+
+
+<div class="foter">
 
 				<div class="row">
 				    <div class="col-sm-3">
@@ -196,6 +297,84 @@ background-color: #eee;"> Wallet</h2>
 
 
 <script>
+
+$(document).ready(function(){
+    
+   var coinn = getUrlParameter('bb');
+   $('.js').show();
+            $.ajax({
+                url:"ajax/btcsell.php?bb="+coinn,
+                type:"POST",
+                data:{},
+                success:function(data){
+                   //alert(data);
+                   
+                   if(data == "You are not autherised to access please login")
+                   {
+                       window.location.href="exchangelogin.html";
+                   }else
+                   {
+                      $('#btcbbyy').html(data);  
+                   }
+                   
+                   $('.js').hide();
+                      
+                }
+            });
+            
+        $('#btcselll').on('submit',function(){
+            alert();
+        $('.js').show();
+           var seller_email = $('#buyy').val();
+           var buyy = $('#buyy1').val();
+           var recbuy_inr = $('#totalbtc').val();
+           var recbuy_myr = $('#totaletc').val();
+           var recbuy = $('#recbuy').val();
+           var btcIn = $('#btcIn').val();
+           var currency = $('#currency').val();
+           
+           var ramount = $('#ramount').val();
+           var feea = $('#feea').val();
+           var btccheack = $('#btccheack').val();
+           var ehtcheack = $('#ehtcheack').val();
+           
+           alert();
+            $.ajax({
+                url:"ajax/btcbbyIn.php",
+                type:"POST",
+                data:{buyy,bbt,recbuy,btcIn,currency,seller_email,recbuy_inr,recbuy_myr},
+                success:function(data){
+                   alert(data);
+                   if(data == 'success')
+                   {
+                      //window.location.href="banklist.php?bank_id=&conm=";
+                   }
+                   
+                   $('.js').hide();
+                }
+            });
+            
+            return false;
+            
+        
+        });
+    });
+        
+var getUrlParameter = function getUrlParameter(sParam) {
+    var sPageURL = decodeURIComponent(window.location.search.substring(1)),
+        sURLVariables = sPageURL.split('&'),
+        sParameterName,
+        i;
+
+    for (i = 0; i < sURLVariables.length; i++) {
+        sParameterName = sURLVariables[i].split('=');
+
+        if (sParameterName[0] === sParam) {
+            return sParameterName[1] === undefined ? true : sParameterName[1];
+        }
+    }
+};
+
 function openNav() {
     document.getElementById("mySidenav").style.width = "250px";
     document.getElementById("main").style.marginLeft = "250px";
@@ -210,7 +389,6 @@ function closeNav() {
 
 	</body>
 	</html>
-
 
 
 
