@@ -1,0 +1,216 @@
+[23-May-2018 12:09:53 Etc/GMT] PHP Warning:  include(config.php): failed to open stream: No such file or directory in /home/codegvgr/public_html/milkapp79/api/index.php on line 5
+[23-May-2018 12:09:53 Etc/GMT] PHP Warning:  include(config.php): failed to open stream: No such file or directory in /home/codegvgr/public_html/milkapp79/api/index.php on line 5
+[23-May-2018 12:09:53 Etc/GMT] PHP Warning:  include(): Failed opening 'config.php' for inclusion (include_path='.:/opt/alt/php70/usr/share/pear') in /home/codegvgr/public_html/milkapp79/api/index.php on line 5
+[23-May-2018 12:09:53 Etc/GMT] PHP Notice:  Undefined variable: con in /home/codegvgr/public_html/milkapp79/api/index.php on line 19
+[23-May-2018 12:09:53 Etc/GMT] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/codegvgr/public_html/milkapp79/api/index.php on line 19
+[23-May-2018 12:09:53 Etc/GMT] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/codegvgr/public_html/milkapp79/api/index.php on line 21
+[24-May-2018 09:24:41 Etc/GMT] PHP Warning:  include(config.php): failed to open stream: No such file or directory in /home/codegvgr/public_html/milkapp79/api/index.php on line 5
+[24-May-2018 09:24:41 Etc/GMT] PHP Warning:  include(config.php): failed to open stream: No such file or directory in /home/codegvgr/public_html/milkapp79/api/index.php on line 5
+[24-May-2018 09:24:41 Etc/GMT] PHP Warning:  include(): Failed opening 'config.php' for inclusion (include_path='.:/opt/alt/php70/usr/share/pear') in /home/codegvgr/public_html/milkapp79/api/index.php on line 5
+[24-May-2018 09:24:41 Etc/GMT] PHP Notice:  Undefined variable: con in /home/codegvgr/public_html/milkapp79/api/index.php on line 19
+[24-May-2018 09:24:41 Etc/GMT] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/codegvgr/public_html/milkapp79/api/index.php on line 19
+[24-May-2018 09:24:41 Etc/GMT] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/codegvgr/public_html/milkapp79/api/index.php on line 21
+[24-May-2018 09:25:34 Etc/GMT] PHP Warning:  include(config.php): failed to open stream: No such file or directory in /home/codegvgr/public_html/milkapp79/api/index.php on line 5
+[24-May-2018 09:25:34 Etc/GMT] PHP Warning:  include(config.php): failed to open stream: No such file or directory in /home/codegvgr/public_html/milkapp79/api/index.php on line 5
+[24-May-2018 09:25:34 Etc/GMT] PHP Warning:  include(): Failed opening 'config.php' for inclusion (include_path='.:/opt/alt/php70/usr/share/pear') in /home/codegvgr/public_html/milkapp79/api/index.php on line 5
+[24-May-2018 09:25:34 Etc/GMT] PHP Notice:  Undefined variable: con in /home/codegvgr/public_html/milkapp79/api/index.php on line 19
+[24-May-2018 09:25:34 Etc/GMT] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/codegvgr/public_html/milkapp79/api/index.php on line 19
+[24-May-2018 09:25:34 Etc/GMT] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/codegvgr/public_html/milkapp79/api/index.php on line 21
+[24-May-2018 09:28:29 Etc/GMT] PHP Warning:  include(config.php): failed to open stream: No such file or directory in /home/codegvgr/public_html/milkapp79/api/login.php on line 5
+[24-May-2018 09:28:29 Etc/GMT] PHP Warning:  include(config.php): failed to open stream: No such file or directory in /home/codegvgr/public_html/milkapp79/api/login.php on line 5
+[24-May-2018 09:28:29 Etc/GMT] PHP Warning:  include(): Failed opening 'config.php' for inclusion (include_path='.:/opt/alt/php70/usr/share/pear') in /home/codegvgr/public_html/milkapp79/api/login.php on line 5
+[24-May-2018 09:28:29 Etc/GMT] PHP Notice:  Undefined variable: con in /home/codegvgr/public_html/milkapp79/api/login.php on line 19
+[24-May-2018 09:28:29 Etc/GMT] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/codegvgr/public_html/milkapp79/api/login.php on line 19
+[24-May-2018 09:28:29 Etc/GMT] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/codegvgr/public_html/milkapp79/api/login.php on line 21
+[24-May-2018 09:32:52 Etc/GMT] PHP Warning:  include(config.php): failed to open stream: No such file or directory in /home/codegvgr/public_html/milkapp79/api/login.php on line 5
+[24-May-2018 09:32:52 Etc/GMT] PHP Warning:  include(config.php): failed to open stream: No such file or directory in /home/codegvgr/public_html/milkapp79/api/login.php on line 5
+[24-May-2018 09:32:52 Etc/GMT] PHP Warning:  include(): Failed opening 'config.php' for inclusion (include_path='.:/opt/alt/php70/usr/share/pear') in /home/codegvgr/public_html/milkapp79/api/login.php on line 5
+[24-May-2018 09:32:52 Etc/GMT] PHP Notice:  Undefined variable: con in /home/codegvgr/public_html/milkapp79/api/login.php on line 19
+[24-May-2018 09:32:52 Etc/GMT] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/codegvgr/public_html/milkapp79/api/login.php on line 19
+[24-May-2018 09:32:52 Etc/GMT] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/codegvgr/public_html/milkapp79/api/login.php on line 22
+[24-May-2018 09:34:39 Etc/GMT] PHP Warning:  include(config.php): failed to open stream: No such file or directory in /home/codegvgr/public_html/milkapp79/api/login.php on line 5
+[24-May-2018 09:34:39 Etc/GMT] PHP Warning:  include(config.php): failed to open stream: No such file or directory in /home/codegvgr/public_html/milkapp79/api/login.php on line 5
+[24-May-2018 09:34:39 Etc/GMT] PHP Warning:  include(): Failed opening 'config.php' for inclusion (include_path='.:/opt/alt/php70/usr/share/pear') in /home/codegvgr/public_html/milkapp79/api/login.php on line 5
+[24-May-2018 09:34:39 Etc/GMT] PHP Notice:  Undefined variable: con in /home/codegvgr/public_html/milkapp79/api/login.php on line 19
+[24-May-2018 09:34:39 Etc/GMT] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/codegvgr/public_html/milkapp79/api/login.php on line 19
+[24-May-2018 09:34:39 Etc/GMT] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/codegvgr/public_html/milkapp79/api/login.php on line 22
+[24-May-2018 09:35:20 Etc/GMT] PHP Warning:  include(config.php): failed to open stream: No such file or directory in /home/codegvgr/public_html/milkapp79/api/login.php on line 5
+[24-May-2018 09:35:20 Etc/GMT] PHP Warning:  include(config.php): failed to open stream: No such file or directory in /home/codegvgr/public_html/milkapp79/api/login.php on line 5
+[24-May-2018 09:35:20 Etc/GMT] PHP Warning:  include(): Failed opening 'config.php' for inclusion (include_path='.:/opt/alt/php70/usr/share/pear') in /home/codegvgr/public_html/milkapp79/api/login.php on line 5
+[24-May-2018 09:35:20 Etc/GMT] PHP Notice:  Undefined variable: con in /home/codegvgr/public_html/milkapp79/api/login.php on line 19
+[24-May-2018 09:35:20 Etc/GMT] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/codegvgr/public_html/milkapp79/api/login.php on line 19
+[24-May-2018 09:35:20 Etc/GMT] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/codegvgr/public_html/milkapp79/api/login.php on line 22
+[24-May-2018 09:36:18 Etc/GMT] PHP Warning:  include(config.php): failed to open stream: No such file or directory in /home/codegvgr/public_html/milkapp79/api/login.php on line 5
+[24-May-2018 09:36:18 Etc/GMT] PHP Warning:  include(config.php): failed to open stream: No such file or directory in /home/codegvgr/public_html/milkapp79/api/login.php on line 5
+[24-May-2018 09:36:18 Etc/GMT] PHP Warning:  include(): Failed opening 'config.php' for inclusion (include_path='.:/opt/alt/php70/usr/share/pear') in /home/codegvgr/public_html/milkapp79/api/login.php on line 5
+[24-May-2018 09:36:18 Etc/GMT] PHP Notice:  Undefined variable: con in /home/codegvgr/public_html/milkapp79/api/login.php on line 19
+[24-May-2018 09:36:18 Etc/GMT] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/codegvgr/public_html/milkapp79/api/login.php on line 19
+[24-May-2018 09:36:18 Etc/GMT] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/codegvgr/public_html/milkapp79/api/login.php on line 22
+[24-May-2018 09:37:37 Etc/GMT] PHP Warning:  include(config.php): failed to open stream: No such file or directory in /home/codegvgr/public_html/milkapp79/api/login.php on line 5
+[24-May-2018 09:37:37 Etc/GMT] PHP Warning:  include(config.php): failed to open stream: No such file or directory in /home/codegvgr/public_html/milkapp79/api/login.php on line 5
+[24-May-2018 09:37:37 Etc/GMT] PHP Warning:  include(): Failed opening 'config.php' for inclusion (include_path='.:/opt/alt/php70/usr/share/pear') in /home/codegvgr/public_html/milkapp79/api/login.php on line 5
+[24-May-2018 09:37:37 Etc/GMT] PHP Notice:  Undefined variable: con in /home/codegvgr/public_html/milkapp79/api/login.php on line 19
+[24-May-2018 09:37:37 Etc/GMT] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/codegvgr/public_html/milkapp79/api/login.php on line 19
+[24-May-2018 09:37:37 Etc/GMT] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/codegvgr/public_html/milkapp79/api/login.php on line 22
+[24-May-2018 09:38:08 Etc/GMT] PHP Warning:  include(config.php): failed to open stream: No such file or directory in /home/codegvgr/public_html/milkapp79/api/login.php on line 5
+[24-May-2018 09:38:08 Etc/GMT] PHP Warning:  include(config.php): failed to open stream: No such file or directory in /home/codegvgr/public_html/milkapp79/api/login.php on line 5
+[24-May-2018 09:38:08 Etc/GMT] PHP Warning:  include(): Failed opening 'config.php' for inclusion (include_path='.:/opt/alt/php70/usr/share/pear') in /home/codegvgr/public_html/milkapp79/api/login.php on line 5
+[24-May-2018 09:38:08 Etc/GMT] PHP Notice:  Undefined variable: con in /home/codegvgr/public_html/milkapp79/api/login.php on line 19
+[24-May-2018 09:38:08 Etc/GMT] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/codegvgr/public_html/milkapp79/api/login.php on line 19
+[24-May-2018 09:38:08 Etc/GMT] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/codegvgr/public_html/milkapp79/api/login.php on line 22
+[24-May-2018 09:38:26 Etc/GMT] PHP Warning:  include(config.php): failed to open stream: No such file or directory in /home/codegvgr/public_html/milkapp79/api/login.php on line 5
+[24-May-2018 09:38:26 Etc/GMT] PHP Warning:  include(config.php): failed to open stream: No such file or directory in /home/codegvgr/public_html/milkapp79/api/login.php on line 5
+[24-May-2018 09:38:26 Etc/GMT] PHP Warning:  include(): Failed opening 'config.php' for inclusion (include_path='.:/opt/alt/php70/usr/share/pear') in /home/codegvgr/public_html/milkapp79/api/login.php on line 5
+[24-May-2018 09:38:26 Etc/GMT] PHP Notice:  Undefined variable: con in /home/codegvgr/public_html/milkapp79/api/login.php on line 19
+[24-May-2018 09:38:26 Etc/GMT] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/codegvgr/public_html/milkapp79/api/login.php on line 19
+[24-May-2018 09:38:26 Etc/GMT] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/codegvgr/public_html/milkapp79/api/login.php on line 22
+[24-May-2018 09:38:48 Etc/GMT] PHP Warning:  include(config.php): failed to open stream: No such file or directory in /home/codegvgr/public_html/milkapp79/api/login.php on line 5
+[24-May-2018 09:38:48 Etc/GMT] PHP Warning:  include(config.php): failed to open stream: No such file or directory in /home/codegvgr/public_html/milkapp79/api/login.php on line 5
+[24-May-2018 09:38:48 Etc/GMT] PHP Warning:  include(): Failed opening 'config.php' for inclusion (include_path='.:/opt/alt/php70/usr/share/pear') in /home/codegvgr/public_html/milkapp79/api/login.php on line 5
+[24-May-2018 09:38:48 Etc/GMT] PHP Notice:  Undefined variable: con in /home/codegvgr/public_html/milkapp79/api/login.php on line 19
+[24-May-2018 09:38:48 Etc/GMT] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/codegvgr/public_html/milkapp79/api/login.php on line 19
+[24-May-2018 09:38:48 Etc/GMT] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/codegvgr/public_html/milkapp79/api/login.php on line 22
+[24-May-2018 11:33:37 Etc/GMT] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/codegvgr/public_html/milkapp79/api/conformorderlist.php on line 17
+[24-May-2018 11:35:13 Etc/GMT] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/codegvgr/public_html/milkapp79/api/conformorderlist.php on line 17
+[24-May-2018 11:35:56 Etc/GMT] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/codegvgr/public_html/milkapp79/api/conformorderlist.php on line 17
+[24-May-2018 11:41:16 Etc/GMT] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/codegvgr/public_html/milkapp79/api/conformorderlist.php on line 17
+[24-May-2018 11:42:40 Etc/GMT] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/codegvgr/public_html/milkapp79/api/conformorderlist.php on line 17
+[24-May-2018 11:45:01 Etc/GMT] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/codegvgr/public_html/milkapp79/api/assignorder.php on line 17
+[24-May-2018 11:46:08 Etc/GMT] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/codegvgr/public_html/milkapp79/api/assignorder.php on line 17
+[24-May-2018 11:46:46 Etc/GMT] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/codegvgr/public_html/milkapp79/api/conformorderlist.php on line 17
+[24-May-2018 11:47:57 Etc/GMT] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/codegvgr/public_html/milkapp79/api/assignorder.php on line 17
+[24-May-2018 11:49:23 Etc/GMT] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/codegvgr/public_html/milkapp79/api/assignorder.php on line 17
+[24-May-2018 11:49:51 Etc/GMT] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/codegvgr/public_html/milkapp79/api/assignorder.php on line 17
+[24-May-2018 11:50:16 Etc/GMT] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/codegvgr/public_html/milkapp79/api/assignorder.php on line 17
+[24-May-2018 11:51:08 Etc/GMT] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/codegvgr/public_html/milkapp79/api/assignorder.php on line 17
+[24-May-2018 11:51:54 Etc/GMT] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/codegvgr/public_html/milkapp79/api/assignorder.php on line 19
+[24-May-2018 11:57:54 Etc/GMT] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/codegvgr/public_html/milkapp79/api/conformorderlist.php on line 17
+[24-May-2018 12:31:38 Etc/GMT] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/codegvgr/public_html/milkapp79/api/conformorderlist.php on line 17
+[24-May-2018 12:32:22 Etc/GMT] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/codegvgr/public_html/milkapp79/api/conformorderlist.php on line 17
+[24-May-2018 12:32:25 Etc/GMT] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/codegvgr/public_html/milkapp79/api/conformorderlist.php on line 17
+[24-May-2018 12:32:28 Etc/GMT] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/codegvgr/public_html/milkapp79/api/conformorderlist.php on line 17
+[24-May-2018 12:39:45 Etc/GMT] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/codegvgr/public_html/milkapp79/api/conformorderlist.php on line 17
+[24-May-2018 12:40:08 Etc/GMT] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/codegvgr/public_html/milkapp79/api/conformorderlist.php on line 17
+[24-May-2018 12:40:11 Etc/GMT] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/codegvgr/public_html/milkapp79/api/conformorderlist.php on line 17
+[24-May-2018 12:40:16 Etc/GMT] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/codegvgr/public_html/milkapp79/api/conformorderlist.php on line 17
+[24-May-2018 12:40:18 Etc/GMT] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/codegvgr/public_html/milkapp79/api/conformorderlist.php on line 17
+[24-May-2018 12:40:20 Etc/GMT] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/codegvgr/public_html/milkapp79/api/conformorderlist.php on line 17
+[24-May-2018 12:40:36 Etc/GMT] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/codegvgr/public_html/milkapp79/api/conformorderlist.php on line 17
+[24-May-2018 12:41:50 Etc/GMT] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/codegvgr/public_html/milkapp79/api/conformorderlist.php on line 17
+[24-May-2018 12:42:12 Etc/GMT] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/codegvgr/public_html/milkapp79/api/conformorderlist.php on line 18
+[24-May-2018 12:42:46 Etc/GMT] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/codegvgr/public_html/milkapp79/api/conformorderlist.php on line 18
+[25-May-2018 06:05:25 Etc/GMT] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/codegvgr/public_html/milkapp79/api/conformorderlist.php on line 18
+[25-May-2018 06:05:42 Etc/GMT] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/codegvgr/public_html/milkapp79/api/assignorder.php on line 18
+[14-Jun-2018 05:30:18 Etc/GMT] PHP Notice:  Undefined variable: dod in /home/codegvgr/public_html/milkapp79/api/deliverboy_update.php on line 11
+[14-Jun-2018 05:30:18 Etc/GMT] PHP Notice:  Undefined variable: mod in /home/codegvgr/public_html/milkapp79/api/deliverboy_update.php on line 11
+[14-Jun-2018 05:30:18 Etc/GMT] PHP Notice:  Undefined variable: yod in /home/codegvgr/public_html/milkapp79/api/deliverboy_update.php on line 11
+[14-Jun-2018 06:07:38 Etc/GMT] PHP Notice:  Undefined variable: REQUEST in /home/codegvgr/public_html/milkapp79/api/myleave.php on line 10
+[14-Jun-2018 06:07:38 Etc/GMT] PHP Notice:  Undefined variable: REQUEST in /home/codegvgr/public_html/milkapp79/api/myleave.php on line 12
+[14-Jun-2018 06:09:26 Etc/GMT] PHP Notice:  Undefined variable: REQUEST in /home/codegvgr/public_html/milkapp79/api/myleave.php on line 10
+[14-Jun-2018 06:09:26 Etc/GMT] PHP Notice:  Undefined variable: REQUEST in /home/codegvgr/public_html/milkapp79/api/myleave.php on line 12
+[14-Jun-2018 06:12:30 Etc/GMT] PHP Notice:  Undefined variable: REQUEST in /home/codegvgr/public_html/milkapp79/api/myleave.php on line 10
+[14-Jun-2018 06:12:30 Etc/GMT] PHP Notice:  Undefined variable: REQUEST in /home/codegvgr/public_html/milkapp79/api/myleave.php on line 12
+[14-Jun-2018 08:37:12 Etc/GMT] PHP Notice:  Undefined index: reason in /home/codegvgr/public_html/milkapp79/api/myleave.php on line 10
+[14-Jun-2018 08:37:12 Etc/GMT] PHP Notice:  Undefined index: status in /home/codegvgr/public_html/milkapp79/api/myleave.php on line 12
+[14-Jun-2018 08:40:48 Etc/GMT] PHP Notice:  Undefined index: reason in /home/codegvgr/public_html/milkapp79/api/myleave.php on line 10
+[14-Jun-2018 08:40:48 Etc/GMT] PHP Notice:  Undefined index: status in /home/codegvgr/public_html/milkapp79/api/myleave.php on line 12
+[14-Jun-2018 08:57:19 Etc/GMT] PHP Notice:  Undefined index: status in /home/codegvgr/public_html/milkapp79/api/myleave.php on line 12
+[14-Jun-2018 10:16:41 Etc/GMT] PHP Notice:  Undefined index: reason in /home/codegvgr/public_html/milkapp79/api/cancelorder.php on line 9
+[14-Jun-2018 10:16:41 Etc/GMT] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/codegvgr/public_html/milkapp79/api/cancelorder.php on line 16
+[14-Jun-2018 10:16:41 Etc/GMT] PHP Fatal error:  Uncaught Error: Call to undefined function msqli_query() in /home/codegvgr/public_html/milkapp79/api/cancelorder.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/codegvgr/public_html/milkapp79/api/cancelorder.php on line 19
+[14-Jun-2018 10:17:21 Etc/GMT] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/codegvgr/public_html/milkapp79/api/cancelorder.php on line 16
+[14-Jun-2018 10:17:21 Etc/GMT] PHP Fatal error:  Uncaught Error: Call to undefined function msqli_query() in /home/codegvgr/public_html/milkapp79/api/cancelorder.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/codegvgr/public_html/milkapp79/api/cancelorder.php on line 19
+[14-Jun-2018 10:20:53 Etc/GMT] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/codegvgr/public_html/milkapp79/api/cancelorder.php on line 16
+[14-Jun-2018 10:20:53 Etc/GMT] PHP Fatal error:  Uncaught Error: Call to undefined function msqli_query() in /home/codegvgr/public_html/milkapp79/api/cancelorder.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/codegvgr/public_html/milkapp79/api/cancelorder.php on line 19
+[14-Jun-2018 10:21:43 Etc/GMT] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/codegvgr/public_html/milkapp79/api/cancelorder.php on line 16
+[14-Jun-2018 10:21:43 Etc/GMT] PHP Fatal error:  Uncaught Error: Call to undefined function msqli_query() in /home/codegvgr/public_html/milkapp79/api/cancelorder.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/codegvgr/public_html/milkapp79/api/cancelorder.php on line 19
+[14-Jun-2018 10:23:25 Etc/GMT] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/codegvgr/public_html/milkapp79/api/cancelorder.php on line 16
+[14-Jun-2018 10:23:25 Etc/GMT] PHP Fatal error:  Uncaught Error: Call to undefined function msqli_query() in /home/codegvgr/public_html/milkapp79/api/cancelorder.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/codegvgr/public_html/milkapp79/api/cancelorder.php on line 19
+[14-Jun-2018 10:38:04 Etc/GMT] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/codegvgr/public_html/milkapp79/api/cancelorder.php on line 16
+[14-Jun-2018 10:39:07 Etc/GMT] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/codegvgr/public_html/milkapp79/api/cancelorder.php on line 16
+[14-Jun-2018 10:40:19 Etc/GMT] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/codegvgr/public_html/milkapp79/api/cancelorder.php on line 16
+[14-Jun-2018 10:48:06 Etc/GMT] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/codegvgr/public_html/milkapp79/api/cancelorder.php on line 16
+[14-Jun-2018 11:22:58 Etc/GMT] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/codegvgr/public_html/milkapp79/api/cancelorder.php on line 16
+[14-Jun-2018 12:08:32 Etc/GMT] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/codegvgr/public_html/milkapp79/api/cancelorder.php on line 16
+[14-Jun-2018 13:14:24 Etc/GMT] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/codegvgr/public_html/milkapp79/api/cancelorder.php on line 16
+[15-Jun-2018 04:30:29 Etc/GMT] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/codegvgr/public_html/milkapp79/api/cancelorder.php on line 16
+[15-Jun-2018 04:31:39 Etc/GMT] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/codegvgr/public_html/milkapp79/api/cancelorder.php on line 16
+[15-Jun-2018 04:34:58 Etc/GMT] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/codegvgr/public_html/milkapp79/api/cancelorder.php on line 16
+[15-Jun-2018 04:37:12 Etc/GMT] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/codegvgr/public_html/milkapp79/api/cancelorder.php on line 16
+[15-Jun-2018 04:40:41 Etc/GMT] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/codegvgr/public_html/milkapp79/api/cancelorder.php on line 16
+[15-Jun-2018 04:41:18 Etc/GMT] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/codegvgr/public_html/milkapp79/api/cancelorder.php on line 16
+[15-Jun-2018 04:41:23 Etc/GMT] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/codegvgr/public_html/milkapp79/api/cancelorder.php on line 16
+[15-Jun-2018 04:41:31 Etc/GMT] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/codegvgr/public_html/milkapp79/api/cancelorder.php on line 16
+[15-Jun-2018 04:41:31 Etc/GMT] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/codegvgr/public_html/milkapp79/api/cancelorder.php on line 16
+[15-Jun-2018 04:41:35 Etc/GMT] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/codegvgr/public_html/milkapp79/api/cancelorder.php on line 16
+[15-Jun-2018 04:41:48 Etc/GMT] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/codegvgr/public_html/milkapp79/api/cancelorder.php on line 16
+[15-Jun-2018 04:42:13 Etc/GMT] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/codegvgr/public_html/milkapp79/api/cancelorder.php on line 16
+[15-Jun-2018 04:43:27 Etc/GMT] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/codegvgr/public_html/milkapp79/api/cancelorder.php on line 16
+[15-Jun-2018 04:44:39 Etc/GMT] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/codegvgr/public_html/milkapp79/api/cancelorder.php on line 16
+[15-Jun-2018 04:58:49 Etc/GMT] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/codegvgr/public_html/milkapp79/api/cancelorder.php on line 19
+[15-Jun-2018 04:58:55 Etc/GMT] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/codegvgr/public_html/milkapp79/api/cancelorder.php on line 19
+[15-Jun-2018 08:24:01 Etc/GMT] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/codegvgr/public_html/milkapp79/api/cancelorder.php on line 19
+[15-Jun-2018 08:24:01 Etc/GMT] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/codegvgr/public_html/milkapp79/api/cancelorder.php on line 19
+[15-Jun-2018 11:55:34 Etc/GMT] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/codegvgr/public_html/milkapp79/api/cancelorder.php on line 19
+[15-Jun-2018 12:00:29 Etc/GMT] PHP Notice:  Undefined index: status in /home/codegvgr/public_html/milkapp79/api/myleave.php on line 12
+[15-Jun-2018 12:03:36 Etc/GMT] PHP Notice:  Use of undefined constant orderid - assumed 'orderid' in /home/codegvgr/public_html/milkapp79/api/cancelorder.php on line 6
+[15-Jun-2018 12:04:25 Etc/GMT] PHP Notice:  Use of undefined constant orderid - assumed 'orderid' in /home/codegvgr/public_html/milkapp79/api/cancelorder.php on line 6
+[15-Jun-2018 12:05:37 Etc/GMT] PHP Notice:  Use of undefined constant orderid - assumed 'orderid' in /home/codegvgr/public_html/milkapp79/api/cancelorder.php on line 6
+[15-Jun-2018 12:05:43 Etc/GMT] PHP Notice:  Use of undefined constant orderid - assumed 'orderid' in /home/codegvgr/public_html/milkapp79/api/cancelorder.php on line 6
+[15-Jun-2018 12:06:08 Etc/GMT] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/codegvgr/public_html/milkapp79/api/cancelorder.php on line 19
+[15-Jun-2018 12:07:38 Etc/GMT] PHP Notice:  Undefined index: email in /home/codegvgr/public_html/milkapp79/api/cancelorder.php on line 12
+[15-Jun-2018 12:07:38 Etc/GMT] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/codegvgr/public_html/milkapp79/api/cancelorder.php on line 19
+[15-Jun-2018 12:08:06 Etc/GMT] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/codegvgr/public_html/milkapp79/api/cancelorder.php on line 19
+[15-Jun-2018 12:19:35 Etc/GMT] PHP Notice:  Undefined variable: rr in /home/codegvgr/public_html/milkapp79/api/cancelorder.php on line 10
+[15-Jun-2018 12:19:35 Etc/GMT] PHP Notice:  Use of undefined constant orderid - assumed 'orderid' in /home/codegvgr/public_html/milkapp79/api/cancelorder.php on line 11
+[15-Jun-2018 12:19:35 Etc/GMT] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/codegvgr/public_html/milkapp79/api/cancelorder.php on line 22
+[15-Jun-2018 12:20:48 Etc/GMT] PHP Notice:  Undefined variable: rr in /home/codegvgr/public_html/milkapp79/api/cancelorder.php on line 10
+[15-Jun-2018 12:20:48 Etc/GMT] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/codegvgr/public_html/milkapp79/api/cancelorder.php on line 22
+[15-Jun-2018 12:21:50 Etc/GMT] PHP Notice:  Undefined variable: rr in /home/codegvgr/public_html/milkapp79/api/cancelorder.php on line 10
+[15-Jun-2018 12:21:50 Etc/GMT] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/codegvgr/public_html/milkapp79/api/cancelorder.php on line 11
+[15-Jun-2018 12:21:50 Etc/GMT] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/codegvgr/public_html/milkapp79/api/cancelorder.php on line 23
+[15-Jun-2018 12:24:09 Etc/GMT] PHP Notice:  Undefined variable: rr in /home/codegvgr/public_html/milkapp79/api/cancelorder.php on line 10
+[15-Jun-2018 12:24:09 Etc/GMT] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/codegvgr/public_html/milkapp79/api/cancelorder.php on line 11
+[15-Jun-2018 12:24:09 Etc/GMT] PHP Notice:  Undefined variable: ssfetch1 in /home/codegvgr/public_html/milkapp79/api/cancelorder.php on line 12
+[15-Jun-2018 12:24:09 Etc/GMT] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/codegvgr/public_html/milkapp79/api/cancelorder.php on line 24
+[15-Jun-2018 12:26:06 Etc/GMT] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/codegvgr/public_html/milkapp79/api/cancelorder.php on line 16
+[15-Jun-2018 12:26:06 Etc/GMT] PHP Notice:  Undefined variable: ssfetch1 in /home/codegvgr/public_html/milkapp79/api/cancelorder.php on line 17
+[15-Jun-2018 12:26:06 Etc/GMT] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/codegvgr/public_html/milkapp79/api/cancelorder.php on line 25
+[15-Jun-2018 12:30:42 Etc/GMT] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/codegvgr/public_html/milkapp79/api/cancelorder.php on line 16
+[15-Jun-2018 12:30:42 Etc/GMT] PHP Notice:  Undefined variable: ssfetch1 in /home/codegvgr/public_html/milkapp79/api/cancelorder.php on line 17
+[15-Jun-2018 12:30:42 Etc/GMT] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/codegvgr/public_html/milkapp79/api/cancelorder.php on line 24
+[15-Jun-2018 12:31:04 Etc/GMT] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/codegvgr/public_html/milkapp79/api/cancelorder.php on line 16
+[15-Jun-2018 12:31:04 Etc/GMT] PHP Notice:  Undefined variable: ssfetch1 in /home/codegvgr/public_html/milkapp79/api/cancelorder.php on line 17
+[15-Jun-2018 12:31:04 Etc/GMT] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/codegvgr/public_html/milkapp79/api/cancelorder.php on line 24
+[15-Jun-2018 12:33:20 Etc/GMT] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/codegvgr/public_html/milkapp79/api/cancelorder.php on line 16
+[15-Jun-2018 12:33:20 Etc/GMT] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/codegvgr/public_html/milkapp79/api/cancelorder.php on line 24
+[15-Jun-2018 12:34:03 Etc/GMT] PHP Notice:  Undefined variable: rr in /home/codegvgr/public_html/milkapp79/api/cancelorder.php on line 10
+[15-Jun-2018 12:34:03 Etc/GMT] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/codegvgr/public_html/milkapp79/api/cancelorder.php on line 11
+[15-Jun-2018 12:34:03 Etc/GMT] PHP Notice:  Undefined variable: rr in /home/codegvgr/public_html/milkapp79/api/cancelorder.php on line 13
+[15-Jun-2018 12:35:09 Etc/GMT] PHP Notice:  Undefined variable: rr in /home/codegvgr/public_html/milkapp79/api/cancelorder.php on line 10
+[15-Jun-2018 12:35:09 Etc/GMT] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/codegvgr/public_html/milkapp79/api/cancelorder.php on line 11
+[15-Jun-2018 12:35:09 Etc/GMT] PHP Notice:  Undefined variable: rr in /home/codegvgr/public_html/milkapp79/api/cancelorder.php on line 13
+[15-Jun-2018 12:36:50 Etc/GMT] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/codegvgr/public_html/milkapp79/api/cancelorder.php on line 19
+[15-Jun-2018 12:48:02 Etc/GMT] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/codegvgr/public_html/milkapp79/api/cancelorder.php on line 16
+[15-Jun-2018 12:48:02 Etc/GMT] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/codegvgr/public_html/milkapp79/api/cancelorder.php on line 23
+[15-Jun-2018 12:49:39 Etc/GMT] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/codegvgr/public_html/milkapp79/api/cancelorder.php on line 16
+[15-Jun-2018 12:49:39 Etc/GMT] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/codegvgr/public_html/milkapp79/api/cancelorder.php on line 23
+[15-Jun-2018 12:50:14 Etc/GMT] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/codegvgr/public_html/milkapp79/api/cancelorder.php on line 23
+[16-Jun-2018 04:54:04 Etc/GMT] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/codegvgr/public_html/milkapp79/api/cancelorder.php on line 24
+[16-Jun-2018 08:56:23 Etc/GMT] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/codegvgr/public_html/milkapp79/api/cancelorder.php on line 24
+[26-Jun-2018 04:52:36 Etc/GMT] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/codegvgr/public_html/milkapp79/api/cancelorder.php on line 24

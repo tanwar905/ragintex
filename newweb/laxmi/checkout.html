@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Check out</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+        <meta content="A fully featured admin theme which can be used to build CRM, CMS, etc." name="description" />
+        <meta content="Coderthemes" name="author" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+        <!-- App favicon -->
+        <link rel="shortcut icon" href="assets/images/favicon.ico">
+
+        <!-- C3 charts css -->
+        <link rel="stylesheet"  href="../plugins/c3/c3.min.css"  type="text/css"  />
+
+        <!-- App css -->
+        
+
+        <script src="assets/js/modernizr.min.js"></script>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<link href="css/bootstarp.min.css" rel="stylesheet" id="bootstrap-css">
+		<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		
+		<link href="css/style.css" rel="stylesheet" type="text/css" />
+
+		<link href="css/style1.css" rel="stylesheet" type="text/css" />
+
+		
+</head>
+
+<body>
+
+
+<div class="head_nav heasder_top">
+
+						<a href="javascript: history.go(-1)" class=back_left><img src="img/left-arrow.png"></a>
+						<h3 class="verifyhead">Checkout</h3>	
+                   <h3 class="log_out">  <img src="img/logout.png" id="im">
+        </h3>	
+</div>
+
+
+<div class="checkout_sec">
+            
+                             <form>
+				  <div class="form-group">
+				    <label for="email" class="foor_size_top">Name:</label>
+				    <input type="text" class="form-control bordr-mov" name="name" id="aa" value="">
+                                     <input type="hidden" class="form-control bordr-mov" name="pid" id="pp" value="">
+				  </div>
+				  <div class="form-group">
+				    <label for="pwd"  class="foor_size">Mobile No.:</label>
+				    <input type="text" class="form-control bordr-mov" id="mo" name="number" value="">
+				  </div>
+				  
+				  <div class="form-group">
+                 <label for="usr"  class="foor_size">City</label>
+                 <select class="form-control bordr-mov" name="ctt" id="cit">
+                       <option>select city</option>
+                       
+                   </select>
+                
+                     </div>
+                     
+          <div class="form-group">
+
+                     <label for="usr"  class="foor_size">Area</label>
+                
+                   <select class="form-control bordr-mov" name="arre" id="are">
+                       
+                   </select>
+                 
+
+                     </div>
+				  
+				  <div class="form-group">
+				    <label for="email"  class="foor_size">Address:</label>
+				    <input type="text" class="form-control bordr-mov" id="ad" name="address" value="">
+				  </div>
+				  <div class="form-group">
+				<button type="submit" class="btn button2" id="oo">Submit</button>
+								 </div>
+				</form> 
+                            
+           
+		 
+</div>
+		
+
+
+
+
+</body>
+
+</html>
+
+
+<script>
+
+$(document).ready(function(){ 
+
+$.ajax({ 
+    url: 'http://codegente.com/aapp/session.php',
+    type: 'POST',
+    success: function(result) {
+        if (result == 'success'){   
+                                      
+url=document.URL;
+
+var pid=url.split("=")[1];
+
+
+document.getElementById("pp").value=pid;
+        
+                                             $.ajax({  
+			                       type:"POST",   
+			                      url: "http://codegente.com/aapp/checkoutform.php",
+			                     data:"", 
+			                      success: function(data)
+			                  {  
+                                               
+                                                  var mobiladd=data.split("#")[0];
+                                                  var areacity=data.split("#")[1];
+                                                  
+                                                  var mobile=mobiladd.split(",")[0];
+                                                  var address=mobiladd.split(",")[1];
+                                                  
+                                                 
+                                                  
+                                                document.getElementById("ad").value=address;
+                                                 document.getElementById("mo").value=mobile;
+                                                 
+                                                 
+                              
+                     
+				               
+			                      
+			                  }
+			                 });
+			                 
+			                 
+			                  $.ajax({  
+			                       type:"POST",   
+			                      url: "http://codegente.com/aapp/areaselect.php",
+			                     data:"", 
+			                      success: function(data)
+			                  {  
+                                      
+                                                var city=data.split("#")[0];
+                                                  var area=data.split("#")[1];
+                                     
+                                       $("#cit").empty();  
+                                       $("#cit").append(city); 
+                                       $("#are").append(area);
+			                      
+			                  }
+			                 });
+			                 
+			                 
+			                  $(document).ready(function(){ 
+    $.ajax({ 
+			type:"POST",   
+			url: "http://codegente.com/aapp/city.php" ,
+			data:"", 
+			success: function(data)
+			{     
+				        
+				                  $("#cit").append(data);                   
+                                                      
+	
+				}
+			});
+			
+			
+			 
+			
+			
+});
+
+			                 
+			                 	$('#cit').change(function(){
+		    
+		   var aa = $('#cit :selected').text();
+		    
+		                  $.ajax({ 
+			type:"POST",   
+			url: "http://codegente.com/aapp/area.php?city="+aa ,
+			data:"", 
+			success: function(data)
+			{     
+				        
+				                  $("#are").append(data);                   
+                                                      
+	
+				}
+			});
+			
+				  
+		           }); 
+			                 
+			                 
+			                 
+			                 
+        
+
+
+                         $(function () {
+
+        $('form').on('submit', function (e) {
+
+          url=document.URL;
+
+             var oid=url.split("=")[1];
+           
+
+          e.preventDefault();
+
+          $.ajax({
+            type: 'get',
+            url: 'http://codegente.com/aapp/checkoutjs.php?orderid='+oid,
+            data: $('form').serialize(),
+            success: function () {
+                         
+                  
+                 
+
+                  window.location.href="addpayment.html?orderid="+oid;
+          
+
+                
+              
+            }
+          });
+
+        });
+
+      });
+
+                              $("#im").click(function(){ 
+                           
+
+                          $.ajax({
+                                type: 'get',
+                                url: 'http://codegente.com/aapp/logout.php',
+                                data: '',
+                                success: function () {
+                                
+                                          
+                                     window.location.href="login.html";
+          
+
+                
+              
+                               }
+                           });
+                        
+                        
+                 });
+
+
+     
+
+
+
+}
+else{
+             // window.location="login.html";
+        }
+    }
+});
+});
+
+</script>
